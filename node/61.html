@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/61" />
+<link rel="canonical" href="/node/61" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Crear un archivo gzip con Delphi | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"OxMSADH0DXqjaexMsMnW5Cd19jZWuKveeG7PkNWeFsE","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-61 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Crear un archivo gzip con Delphi</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-61" class="node node-article node-promoted clearfix" about="/node/61" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Crear un archivo gzip con Delphi" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="8" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2010-11-14T19:47:48+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 11/14/2010 - 19:47</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>El siguiente código muestra como crear un archivo comprimido gzip (.gz) usando solo las funciones que aparecen en la unit zlib que viene con Delphi, sin necesidad de utilizar dlls externas. Al utilizar este formato podremos abrir los datos comprimidos con otros programas como gzip, 7zip, winrar, etc ... pudiendo así generar ficheros que podrán ser abiertos por otras personas, sin necesidad de que tengan instalada nuestra aplicación.</p>
+<!--break--><p>El archivo se crea siguiendo el formato que se describe en este documento <a href="http://www.gzip.org/zlib/rfc-gzip.html">RFC 1952 GZIP File Format Specification version 4.3</a>. Como se puede leer en el texto anterior, el formato gzip es bastante sencillo, tiene una cabecera, los datos comprimidos y un "pie" y solo permite comprimir un archivo de cada vez, por eso normalmente se suele combinar con otros formatos como "tar" para poder comprimir mas de un fichero dentro del mismo archivo comprimido.</p>
+<p>La siguiente "unit" exporta una función (MakeGZ) que crea un fichero .gz a partir de un Stream de entrada y lo guarda en un Stream de salida, permitiendo así comprimir un fichero, texto, datos en memoria o cualquier otra cosa que pueda ser manejado como un Stream, pudiendo guardar el fichero resultante en disco o en memoria.</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">unit</span> gzip<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">interface</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span> Sysutils<span style="color: #000066;">,</span> Windows<span style="color: #000066;">,</span> Classes<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> MakeGZ<span style="color: #000066;">(</span>Src<span style="color: #000066;">,</span> Dst<span style="color: #000066;">:</span> TStream<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">implementation</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span> zlib<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">type</span>
+  <span style="color: #808080; font-style: italic;">{
+    +---+---+---+---+---+---+---+---+---+---+
+    |ID1|ID2|CM |FLG|     MTIME     |XFL|OS |
+    +---+---+---+---+---+---+---+---+---+---+
+  }</span>
+  TGZHeader <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">packed</span> <span style="color: #000000; font-weight: bold;">record</span>
+    ID1<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>          <span style="color: #808080; font-style: italic;">// IDentification 1 = 31</span>
+    ID2<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>          <span style="color: #808080; font-style: italic;">// IDentification 2 = 139</span>
+    CM<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>           <span style="color: #808080; font-style: italic;">// Compression Method = 8</span>
+    FLG<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>          <span style="color: #808080; font-style: italic;">// Flags</span>
+    MTIME<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>    <span style="color: #808080; font-style: italic;">// Modification TIME</span>
+    XFL<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>          <span style="color: #808080; font-style: italic;">// Extra Flags</span>
+    OS<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>           <span style="color: #808080; font-style: italic;">// Operating System</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+  <span style="color: #808080; font-style: italic;">{
+    +---+---+---+---+---+---+---+---+
+    |     CRC32     |     ISIZE     |
+    +---+---+---+---+---+---+---+---+
+  }</span>
+ 
+  TGZFooter <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">packed</span> <span style="color: #000000; font-weight: bold;">record</span>
+    CRC32<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>    <span style="color: #808080; font-style: italic;">// CRC-32</span>
+    ISIZE<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>    <span style="color: #808080; font-style: italic;">// Input SIZE</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">var</span>
+  CRCTable<span style="color: #000066;">:</span> <span style="color: #000000; font-weight: bold;">array</span><span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">..</span><span style="color: #0000ff;">255</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">of</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> MakeCRCTable<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  c<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>
+  n<span style="color: #000066;">,</span>k<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">for</span> n<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #0000ff;">255</span>  <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    c<span style="color: #000066;">:</span><span style="color: #000066;">=</span> n<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">for</span> k<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #0000ff;">7</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">Odd</span><span style="color: #000066;">(</span>c<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        c<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000cc;">$edb88320</span> <span style="color: #000000; font-weight: bold;">xor</span> <span style="color: #000066;">(</span>c <span style="color: #000000; font-weight: bold;">shr</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">)</span>
+      <span style="color: #000000; font-weight: bold;">else</span>
+        c<span style="color: #000066;">:</span><span style="color: #000066;">=</span> c <span style="color: #000000; font-weight: bold;">shr</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">;</span>
+    CRCTable<span style="color: #000066;">[</span>n<span style="color: #000066;">]</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> c<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">function</span> CCheck<span style="color: #000066;">(</span>code<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Result <span style="color: #000066;">:</span><span style="color: #000066;">=</span> code<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> code &lt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">raise</span> ECompressionError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Error al comprimir'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Calcula el CRC-32</span>
+<span style="color: #000000; font-weight: bold;">function</span> UpdateCRC<span style="color: #000066;">(</span>CRC<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span> Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">;</span> Len<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  CRC<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CRC <span style="color: #000000; font-weight: bold;">xor</span> <span style="color: #0000cc;">$ffffffff</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">while</span> Len &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    CRC<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CRCTable<span style="color: #000066;">[</span><span style="color: #000066;">(</span>CRC <span style="color: #000000; font-weight: bold;">xor</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$ff</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">xor</span> <span style="color: #000066;">(</span>CRC <span style="color: #000000; font-weight: bold;">shr</span> <span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">dec</span><span style="color: #000066;">(</span>Len<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CRC <span style="color: #000000; font-weight: bold;">xor</span> <span style="color: #0000cc;">$ffffffff</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">const</span>
+  BUFFERSIZE <span style="color: #000066;">=</span> <span style="color: #000066;">High</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> MakeGZ<span style="color: #000066;">(</span>Src<span style="color: #000066;">,</span> Dst<span style="color: #000066;">:</span> TStream<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  GZHeader<span style="color: #000066;">:</span> TGZHeader<span style="color: #000066;">;</span>
+  GZFooter<span style="color: #000066;">:</span> TGZFooter<span style="color: #000066;">;</span>
+  Zrec<span style="color: #000066;">:</span> TZStreamRec<span style="color: #000066;">;</span>
+  TmpStream<span style="color: #000066;">:</span> TMemoryStream<span style="color: #000066;">;</span>
+  inBuffer<span style="color: #000066;">,</span>outBuffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">;</span>
+  n<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+ 
+  <span style="color: #808080; font-style: italic;">// Utilizamos este buffer temporal para eliminar la cabecera y el pie de zlib</span>
+  <span style="color: #000000; font-weight: bold;">procedure</span> WriteTempBuffer<span style="color: #000066;">(</span>Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">;</span> Count<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Longint</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #808080; font-style: italic;">// Si es la primera escritura</span>
+    <span style="color: #000000; font-weight: bold;">if</span> TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Size</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Eliminamos la cabecera</span>
+      <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">dec</span><span style="color: #000066;">(</span>count<span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span> 
+    <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+      Dst<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Memory</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span>TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Size</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Clear</span><span style="color: #000066;">;</span>
+    TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>Count<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>  
+ 
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Inicializamos la cabecera</span>
+  <span style="color: #000000; font-weight: bold;">with</span> GZHeader <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    ID1<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">31</span><span style="color: #000066;">;</span>
+    ID2<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">139</span><span style="color: #000066;">;</span>
+    CM<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span><span style="color: #000066;">;</span>
+    FLG<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span> 
+    MTIME<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+    XFL<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+    OS<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">255</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Incializamos el pie</span>
+  GZFooter<span style="color: #000066;">.</span><span style="color: #006600;">CRC32</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  GZFooter<span style="color: #000066;">.</span><span style="color: #006600;">ISIZE</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un buffer temporal</span>
+  TmpStream<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TMemoryStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Creamos el buffer de entrada</span>
+    <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>inBuffer<span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      <span style="color: #808080; font-style: italic;">// Creamos el buffer de salida</span>
+      <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>outBuffer<span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        <span style="color: #808080; font-style: italic;">// Escribimos la cabecera del archivo gz al stream de salida</span>
+        Dst<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>GZHeader<span style="color: #000066;">,</span><span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>GZHeader<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>ZRec<span style="color: #000066;">,</span><span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>ZRec<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">zalloc</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> zlibAllocMem<span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">zfree</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> zlibFreeMem<span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">next_out</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> outBuffer<span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> BUFFERSIZE<span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Inicializamos zlib</span>
+        CCheck<span style="color: #000066;">(</span>deflateInit_<span style="color: #000066;">(</span>ZRec<span style="color: #000066;">,</span> Z_DEFAULT_COMPRESSION<span style="color: #000066;">,</span> zlib_version<span style="color: #000066;">,</span> <span style="color: #000066;">sizeof</span><span style="color: #000066;">(</span>ZRec<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">repeat</span>
+          n<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Src<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>inBuffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Ajustamos los valores del pie</span>
+          <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>GZFooter<span style="color: #000066;">.</span><span style="color: #006600;">ISIZE</span><span style="color: #000066;">,</span>n<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          GZFooter<span style="color: #000066;">.</span><span style="color: #006600;">CRC32</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> UpdateCRC<span style="color: #000066;">(</span>GZFooter<span style="color: #000066;">.</span><span style="color: #006600;">CRC32</span><span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">(</span>inBuffer<span style="color: #000066;">)</span><span style="color: #000066;">,</span>n<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          ZRec<span style="color: #000066;">.</span><span style="color: #006600;">next_in</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> inBuffer<span style="color: #000066;">;</span>
+          ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_in</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> n<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000066;">(</span>ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_in</span> &gt; <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">do</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            CCheck<span style="color: #000066;">(</span>deflate<span style="color: #000066;">(</span>ZRec<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">if</span> ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #000000; font-weight: bold;">begin</span>
+              WriteTempBuffer<span style="color: #000066;">(</span>outBuffer<span style="color: #000066;">,</span> BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+              ZRec<span style="color: #000066;">.</span><span style="color: #006600;">next_out</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> outBuffer<span style="color: #000066;">;</span>
+              ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> BUFFERSIZE<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">until</span> n &lt; BUFFERSIZE<span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">next_in</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">;</span>
+        ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_in</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">try</span>
+          <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000066;">(</span>CCheck<span style="color: #000066;">(</span>deflate<span style="color: #000066;">(</span>ZRec<span style="color: #000066;">,</span> Z_FINISH<span style="color: #000066;">)</span><span style="color: #000066;">)</span> &lt;&gt; Z_STREAM_END<span style="color: #000066;">)</span>
+            <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span>ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">do</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            WriteTempBuffer<span style="color: #000066;">(</span>outBuffer<span style="color: #000066;">,</span> BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            ZRec<span style="color: #000066;">.</span><span style="color: #006600;">next_out</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> outBuffer<span style="color: #000066;">;</span>
+            ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> BUFFERSIZE<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">if</span> ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span> &lt; BUFFERSIZE <span style="color: #000000; font-weight: bold;">then</span>
+            WriteTempBuffer<span style="color: #000066;">(</span>outBuffer<span style="color: #000066;">,</span> BUFFERSIZE <span style="color: #000066;">-</span> ZRec<span style="color: #000066;">.</span><span style="color: #006600;">avail_out</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">finally</span>
+          deflateEnd<span style="color: #000066;">(</span>ZRec<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Escribimos los bytes que quedan en el pie menos los 4 bytes que añade zlib</span>
+        Dst<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Memory</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span>TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Size</span><span style="color: #000066;">-</span><span style="color: #0000ff;">4</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Escribimos el pie</span>
+        Dst<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>GZFooter<span style="color: #000066;">,</span><span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>GZFooter<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>outBuffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>inBuffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    TmpStream<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">initialization</span>
+  MakeCRCTable<span style="color: #000066;">;</span> 
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>Un ejemplo de como usarla:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">var</span>
+  Src<span style="color: #000066;">,</span> Dst<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Src<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'C:\Origen.txt'</span><span style="color: #000066;">,</span>fmOpenRead<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    Dst<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'C:\Origen.txt.gz'</span><span style="color: #000066;">,</span>fmCreate<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      MakeGZ<span style="color: #000066;">(</span>Src<span style="color: #000066;">,</span>Dst<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      Dst<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    Src<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>Enlaces de interés:<br /><a href="http://www.gzip.org/zlib/rfc-gzip.html">http://www.gzip.org/zlib/rfc-gzip.html</a></p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-526"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/526#comment-526" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/526#comment-526" class="permalink" rel="bookmark">Buenas compañero
+La verdad es</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/526#comment-526" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-11-16T23:02:53+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://www.cadetill.com" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">cadetill (no verificado)</a> el Mar, 11/16/2010 - 23:02</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Buenas compañero</p>
+<p>La verdad es que hace años que uso la librería zlib para hacer archivos comprimidos y no sabía que se podía crear archivos gz con ella y que, como bien dices, hace compatible este formato de compresión con los descompresores más estándares del mercado.</p>
+<p>De hecho, hasta me llegué a hacer un pequeño des/compresor de archivos zlib, muy sencillo y rústico, pero que me servía para ver el contenido de los archivos generados por mi aplicación y poder descomprimirlos de forma rápida.</p>
+<p>En fin, que no me enrollo más, que muchas gracias por compartir este código con todos.</p>
+<p>Nos leemos<br />
+cadetill</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-527"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/527#comment-527" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/527#comment-527" class="permalink" rel="bookmark">Gracias Cadetill,
+Si te</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/527#comment-527" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-11-17T00:43:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 11/17/2010 - 00:43</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/526#comment-526" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Gracias Cadetill,</p>
+<p>Si te interesa el tema no te pierdas mi ultimo post, donde explico como hacer un archivo tar.gz, para así poder añadir mas de un fichero, e incluso toda la estructura de directorios, a un fichero comprimido</p>
+<p><a href="http://delphi.jmrds.com/?q=node/63">http://delphi.jmrds.com/?q=node/63</a></p>
+<p>Nos leemos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-915"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/915#comment-915" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/915#comment-915" class="permalink" rel="bookmark">hola seoane.</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/915#comment-915" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-05-12T06:13:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">angel (no verificado)</span> el Sáb, 05/12/2012 - 06:13</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola Seoane.</p>
+<p>una duda enorme.  como se puede agregar un progressbar al usar zlib.pas. Con el código uno comprime y solo espera a que termine, pero esta muy de moda el poder ver el progreso de la compresión. </p>
+<p>Saludos..</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-916"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/916#comment-916" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/916#comment-916" class="permalink" rel="bookmark">En ese caso ya tendrías que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/916#comment-916" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-05-12T13:02:27+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 05/12/2012 - 13:02</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/915#comment-915" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>En ese caso ya tendrías que integrarlo todo dentro de tu aplicación poniendo un progressbar en el formulario y actualizándolo desde el la función MakeGZ.</p>
+<p>Concretamente dentro del bucle </p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">repeat</span>
+     <span style="color: #000066;">...</span>   
+<span style="color: #000000; font-weight: bold;">until</span> n &lt; BUFFERSIZE<span style="color: #000066;">;</span></pre></div>
+<p>Ahí tienes que introducir una instrucción para incrementar el progressbar, y una llamada a Application.Processmessage para que se actualice.</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-989"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/989#comment-989" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/989#comment-989" class="permalink" rel="bookmark">Me podrían ayudar por favor</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/989#comment-989" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2013-03-20T19:34:31+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">ander (no verificado)</span> el Mié, 03/20/2013 - 19:34</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Me podrían ayudar por favor necesito crear el gzip pero poder seleccionar el archivo que quiero comprimir como lo puedo hacer gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-990"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/990#comment-990" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/990#comment-990" class="permalink" rel="bookmark">¿A que te refieres con </a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/990#comment-990" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2013-03-20T21:15:29+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 03/20/2013 - 21:15</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/989#comment-989" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>¿A que te refieres con "seleccionarlo"?.  </p>
+<p>En el código se puede ver claramente donde indicamos que archivo queremos comprimir:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;">Src<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'C:\Origen.txt'</span><span style="color: #000066;">,</span>fmOpenRead<span style="color: #000066;">)</span><span style="color: #000066;">;</span></pre></div>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-1050"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/1050#comment-1050" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/1050#comment-1050" class="permalink" rel="bookmark">he estado trantando de usar</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/1050#comment-1050" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2014-01-17T17:36:31+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">orlando (no verificado)</span> el Vie, 01/17/2014 - 17:36</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>he estado trantando de usar la Unit pero me da error en esta asignación<br />
+ZRec.next_out:= outBuffer;<br />
+me dice que son imconpatibles los tipos char y ansichar</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-1051"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/1051#comment-1051" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/1051#comment-1051" class="permalink" rel="bookmark">Cambiando</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/1051#comment-1051" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2014-01-17T17:44:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Vie, 01/17/2014 - 17:44</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/61" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/1050#comment-1050" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Cambiando</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;">inBuffer<span style="color: #000066;">,</span>outBuffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">;</span></pre></div>
+<p>Por esto, debería funcionar:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;">inBuffer<span style="color: #000066;">,</span>outBuffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">;</span></pre></div>
+<p>En las versiones anteriores de Delphi PChar y PAnsiChar eran equivalente, en las nuevas ya no.</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div>
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

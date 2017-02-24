@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/8" />
+<link rel="canonical" href="/node/8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Controlar dispositivos por el puerto serie | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"SMW9NK9yrQgv_rGHBSzepgb1zwFckt8RU97X51vOYDg","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-8 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Controlar dispositivos por el puerto serie</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-8" class="node node-article node-promoted clearfix" about="/node/8" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Controlar dispositivos por el puerto serie" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="56" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2007-04-07T15:50:53+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 04/07/2007 - 15:50</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Si alguna vez has pensado en controlar algún dispositivo desde tu PC puede que este truco pueda servirte. En este caso se activa o desactiva un rele, que a su vez actúa como un interruptor que permite encender o apagar "cualquier cosa" (una luz, una puerta automática, etc.).</p>
+<!--break--><p>
+Para realizar esto vamos a usar el puerto serie del PC, mas concretamente el pin RTS que en un conector de 9 pines es el numero 7. El circuito se ha reducido para que resulte sencillo y no utilice demasiados componentes, su funcionamiento es muy básico cuando activamos RTS tendremos una tensión positiva que activara el rele, si desactivamos RTS tendremos una tensión negativa y el rele volverá a su estado de reposo. (Siento no entrar en más detalles, intento no utilizar palabras técnicas para que todos puedan entenderlo, pero resulta difícil) </p>
+<p>El circuito sería el siguiente  (no es fácil dibujar con letras):</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">                                  V+
+                                  |
+                           +------+
+                           |      |
+                           _   -------
+                        D2 ^  |   /   |  RELE
+                           |   -------
+                           |      |
+                           +------+
+                                  |
+                                  | c
+                                | /
+        D1        R1            |/
+RTS &gt;---&gt;|-+--/\/\/\/\----------|   T1
+                 R2     |       |\
+           +--/\/\/\/\--+       | \ e
+           |                      |
+GND &gt;------+----------------------+-----&lt; GND
+ 
+R1,R2 10K
+D1,D2 1N4007
+T1 BC517
+V+ 6V..12V</pre></div>
+<p>En cuanto al software, tenemos esta función que, pasándole como parámetros el puerto y el tiempo de espera en milisegundos, activa RTS y la mantiene activa durante el tiempo de espera para después volver a desactivarla.</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">function</span> Activar_RTS<span style="color: #000066;">(</span>Puerto<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span> Espera<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Cardinal</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  hPort<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">THandle</span><span style="color: #000066;">;</span>
+  DCB<span style="color: #000066;">:</span> TDCB<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">''</span><span style="color: #000066;">;</span>
+  Puerto<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Cambiar esto si es necesario un puerto diferente</span>
+  <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span>Puerto&lt;&gt;<span style="color: #ff0000;">'COM1'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span>Puerto&lt;&gt;<span style="color: #ff0000;">'COM2'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    exit<span style="color: #000066;">;</span>
+  hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'\\.\'</span><span style="color: #000066;">+</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">,</span> GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span> GENERIC_WRITE<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span>
+    OPEN_EXISTING<span style="color: #000066;">,</span>FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort&lt;&gt;INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    DCB<span style="color: #000066;">.</span><span style="color: #006600;">DCBlength</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">sizeof</span><span style="color: #000066;">(</span>DCB<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> GetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #000000; font-weight: bold;">with</span> DCB <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        BaudRate <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CBR_9600<span style="color: #000066;">;</span>
+        ByteSize <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span><span style="color: #000066;">;</span>
+        Parity   <span style="color: #000066;">:</span><span style="color: #000066;">=</span> NOPARITY<span style="color: #000066;">;</span>
+        StopBits <span style="color: #000066;">:</span><span style="color: #000066;">=</span> ONESTOPBIT<span style="color: #000066;">;</span>
+        Flags    <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000cc;">$01</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> SetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span> DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        EscapeCommFunction<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>SETRTS<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">Sleep</span><span style="color: #000066;">(</span>Espera<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        EscapeCommFunction<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>CLRRTS<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    CloseHandle<span style="color: #000066;">(</span>hPort<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>Ejemplo de uso:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;">  Activar_RTS<span style="color: #000066;">(</span><span style="color: #ff0000;">'COM1'</span><span style="color: #000066;">,</span><span style="color: #0000ff;">5000</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span></pre></div>
+<p>Ahora bien, seria interesante poder activar y desactivar el rele a discrepcion. Para eso, vamos a tener una funcion que lo encienda y otro que lo apague. Pues bien lo primero que tenemos que hacer es declarar la variable hPort como global, y separar la función de arriba en 4:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">var</span>
+  hPort<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Thandle</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> AbrirPuerto<span style="color: #000066;">(</span>Puerto<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  DCB<span style="color: #000066;">:</span> TDCB<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Puerto<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Cambiar esto si es necesario un puerto diferente</span>
+  <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span>Puerto&lt;&gt;<span style="color: #ff0000;">'COM1'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span>Puerto&lt;&gt;<span style="color: #ff0000;">'COM2'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    exit<span style="color: #000066;">;</span>
+  hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'\\.\'</span><span style="color: #000066;">+</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">,</span> GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span> GENERIC_WRITE<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span>
+    OPEN_EXISTING<span style="color: #000066;">,</span>FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort&lt;&gt;INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    DCB<span style="color: #000066;">.</span><span style="color: #006600;">DCBlength</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">sizeof</span><span style="color: #000066;">(</span>DCB<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> GetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #000000; font-weight: bold;">with</span> DCB <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        BaudRate <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CBR_9600<span style="color: #000066;">;</span>
+        ByteSize <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span><span style="color: #000066;">;</span>
+        Parity   <span style="color: #000066;">:</span><span style="color: #000066;">=</span> NOPARITY<span style="color: #000066;">;</span>
+        StopBits <span style="color: #000066;">:</span><span style="color: #000066;">=</span> ONESTOPBIT<span style="color: #000066;">;</span>
+        Flags    <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000cc;">$01</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> SetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span> DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        Exit<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    CloseHandle<span style="color: #000066;">(</span>hPort<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> INVALID_HANDLE_VALUE<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> CerrarPuerto<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    CloseHandle<span style="color: #000066;">(</span>hPort<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> INVALID_HANDLE_VALUE<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> ActivarRTS<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+    EscapeCommFunction<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>SETRTS<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> DesactivarRTS<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+    EscapeCommFunction<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>CLRRTS<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>Antes de usar el puerto tienes que llamar la función AbrirPuerto y cuando dejes de usarlo CerrarPuerto. Las funciones ActivarRTS y DesactivarRTS hacen lo que parece activar y desactivar RTS, para que funcionen el puerto tiene que estar abierto.</p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-45"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/45#comment-45" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/45#comment-45" class="permalink" rel="bookmark">Amigo disculpa, no podrías</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/45#comment-45" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-02-08T01:07:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">walter (no verificado)</span> el Vie, 02/08/2008 - 01:07</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Amigo disculpa, no podrías decirme como se hace esto mismo en visual basic. Yo se que esta pagina esta dedicada a delphi, pero nunca he programado en este lenguaje.. gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-47"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/47#comment-47" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/47#comment-47" class="permalink" rel="bookmark">Pues hace mucho tiempo que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/47#comment-47" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-02-08T01:20:03+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Vie, 02/08/2008 - 01:20</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/45#comment-45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Pues hace mucho tiempo que no toco el vb, pero si no recuerdo mal se podía acceder a las APIs sin ningún problema por lo que no hay razón para que no puedas usar las funciones EscapeCommFunction, SetCommState, CreateFile, etc ... Por otro lado si estas usando .NET entonces la cosa cambia ya que no puedes acceder directamente a esas APIS, tendrás que buscar algún componente que maneje el puerto serie, pero como ya te dije, de vb se bastante poco.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-51"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/51#comment-51" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/51#comment-51" class="permalink" rel="bookmark">disculpa la molestia lo que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/51#comment-51" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-03-01T02:24:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Daniel (no verificado)</span> el Sáb, 03/01/2008 - 02:24</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>disculpa la molestia lo que necesito es enviar toda una trama bajo protocolo RS232, por ejemplo enviar una cadena de caracteres ASCII. Lo que no se es que si es posible hacerlo bajo WinXP, ya que me dijeron que los accesos a puertos están restringidos. De ante mano muchas gracias por todo.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-52"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/52#comment-52" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/52#comment-52" class="permalink" rel="bookmark">En Windows XP lo que no se</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/52#comment-52" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-03-01T14:04:25+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 03/01/2008 - 14:04</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/51#comment-51" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>En Windows XP lo que no se puede es acceder directamente a los puertos, como si se podía por ejemplo en windows 95/98 usando instrucciones en ensamblador. Pero si que se puede enviar y recibir datos por el puerto serie sin problemas.</p>
+<p>Por ejemplo, en el código de arriba, la función "AbrirPuerto" obtiene un handle (manejador) y lo guarda en la variable hPort, observa también que dentro de esta función se configuran los parámetros de la comunicación (velocidad, paridad, etc ...). Una vez que tenemos ese handle podemos usar las funciones WriteFile y ReadFile para leer y escribir en el puerto como si lo estuviéramos haciendo en un archivo. solo tienes que tener en cuenta, que al leer, si no hay bastantes bytes almacenados en el buffer la función readfile se quedara parada hasta que reciba los bytes que le has pedido, por eso es aconsejable utilizar la función ClearCommError para determinar el numero de bytes que hay almacenados en el buffer. </p>
+<p>En resumen busca información sobre, ReadFile, WriteFile y ClearCommError, o si prefieres algo mas sencillo busca algún componente para delphi que realice todo esto por ti, hay algunos muy populares.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-59"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/59#comment-59" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/59#comment-59" class="permalink" rel="bookmark">Tengo una rutina en VB 6</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/59#comment-59" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-06-26T18:36:05+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Juan (no verificado)</span> el Jue, 06/26/2008 - 18:36</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/52#comment-52" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Tengo una rutina en VB 6 para leer el puerto serial, pero cuando me mando una cadena de 80 caracteres la lee en dos partes y algunas veces la lee toda y la mayoría de las veces la lee truncada, 20 , 50 o 70 caracteres, podrias orientarme como puedo hacerle para que la lea en una sola vez??.</p>
+<p>Saludos y Gracias.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-60"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/60#comment-60" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/60#comment-60" class="permalink" rel="bookmark">Lamentablemente mis</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/60#comment-60" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-06-26T22:53:18+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Jue, 06/26/2008 - 22:53</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/59#comment-59" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Lamentablemente mis conocimientos de VB 6 son limitados así que no puedo ayudarte demasiado, pero lo que yo haría en tu caso es usar algún carácter para separar las cadenas. Ten en cuenta que leyendo el buffer del puerto serie no sera capaz de distinguir el final de una cadena y el comienzo de otra si no las separas de alguna manera.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div></div><a id="comment-53"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/53#comment-53" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/53#comment-53" class="permalink" rel="bookmark">Estimado:
+Estoy</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/53#comment-53" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-04-09T01:31:28+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Gabriel (no verificado)</span> el Mié, 04/09/2008 - 01:31</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Estimado:</p>
+<p>Estoy experimentando poder utilizar este circuito y programacion para que al hacer un click en un programa de broadcasting se encienda una luz de ON AIR. es factible? Gracias desde ya!!<br />
+Un cordial abrazo.-</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-54"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/54#comment-54" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/54#comment-54" class="permalink" rel="bookmark">Pues no veo porque no,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/54#comment-54" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-04-09T14:32:34+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 04/09/2008 - 14:32</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/53#comment-53" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Pues no veo porque no, siempre que la luz pueda ser activada por medio de un relé. Consulta en las características del relé que compres para comprobar que se ajustan al voltaje y potencia de la luz que quieres encender.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-69"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/69#comment-69" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/69#comment-69" class="permalink" rel="bookmark">Buenos Días:
+   Gracias por</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/69#comment-69" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-09-12T18:18:39+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Iván Caballero Cano (no verificado)</span> el Vie, 09/12/2008 - 18:18</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Buenos Días:</p>
+<p>   Gracias por compartir tus conocimientos con la humanidad !  : )</p>
+<p> Haciendo un llamado a tu amabilidad y abusando de ella quiero hacerte unas preguntas esperando que me las puedas contestar:</p>
+<p>  Antes que eso, soy programador, no muy bueno pero lo soy, y de electrónica realmente no se mucho pero estoy elaborando un sistema<br />
+de control de acceso a una escuela por medio de credenciales con codigo de barras. Se trata entonces de que cuando una credencial pase la prueba de acceso, la computadora mande una señal a una "chapa" eléctrica de una puerta y se abra. Son muy comunes en los consultorios médicos para que la secretaria no se tenga que parar a abrir la puerta o en otros lados.<br />
+  Normalmente ese tipo de chapas ya vienen listas para conectarles un par de cablecitos que vienen de un transformador o "eliminador" como les llamams en Mexico..de esas cajitas negras que venden para dar la corriente adecuada a dispositivos electrónicos de casa como juguetes, aparatos eléctricos domesticos como lamparas, celulares etc.</p>
+<p>  Este tipo de chapas funciona de tal manera que cada vez que se aprieta un boton..se envia una corriente electrica y se activa el mecanismo de la chapa y abre..asi de facil. ¿Esté circuito tuyo me sirve para eso?</p>
+<p>  Otra pregunta.. en el diagrama hasta arriba viene una V+ y supongo que esa se conecta al PIN Numero 7 del puerto y entonces:<br />
+Se conecta unicamente 1 solo cable a ese pin?? nomas así?</p>
+<p>Que es el RTS y el GND?<br />
+El T! es un relay o que es? ¿EN caso de que alguno de los dispositivos tengan 3 patitas..cuales se deben usar?</p>
+<p>Que partes de este circuito debo variar por ejemplo si resulta que la "chapa" de la puerta ocupa un voltaje mayor que el que da este circuito?</p>
+<p>Es posible que "truene" la computadora si me equivoco y conecto mal algo?</p>
+<p>Gracias. Perdón por el abuso de preguntas..pero me gustaría mucho entender esto.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-70"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/70#comment-70" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/70#comment-70" class="permalink" rel="bookmark">Intentare responder a tus</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/70#comment-70" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-09-14T20:07:30+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 09/14/2008 - 20:07</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/69#comment-69" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Intentare responder a tus preguntas Ivan.</p>
+<p>- Si, este circuito sirve para activar ese tipo de mecanismos.<br />
+- V+ Es la tensión de alimentación, es decir, estaría conectado al polo positivo del trasformador.<br />
+- Gnd se corresponde al polo negativo del trasformador y del lado del puerto al pin número 5 (en un conector de nueve pines)<br />
+- T1 es un transistor, en cuanto a que "patitas" usar consulta las especificaciones del fabricante.<br />
+- RTS se corresponde con el pin número 7 del puerto serie (en un conector de 9 pines). Aquí puedes encontrar un esquema de los pines de un puerto serie <a href="http://www.beyondlogic.org/serial/serial.htm">http://www.beyondlogic.org/serial/serial.htm</a></p>
+<p>Y por ultimo ... si que es posible que tu computadora sufra daños e incluso se queme la placa base si te equivocas, por eso es mejor que busques ayuda de alguien con un poco de experiencia. En cualquier caso son muy importantes los diodos d1 y d2,  sobre todo d2 que protegerá tu ordenador de picos de tensión (chispazos) provocados al conectar o desconectar el relé.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-81"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/81#comment-81" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/81#comment-81" class="permalink" rel="bookmark">Mira a mi me encargaron que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/81#comment-81" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-01-05T21:41:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Cross Marian (no verificado)</span> el Lun, 01/05/2009 - 21:41</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Mira a mi me encargaron que hiciera un lector asignador (asi me dijo el profe) de codigos para tarjeta chip (como las de los celulares GSM) pero la verdad es que no he encontrado la forma de hacerlo podrias ayudarme la idea es que haga algo asi mas o menos como lo digo el colega Ivan solo que pues tu codigo me resuelve el abrir la puerta pero necesito que sea con ciertas claves que lo haga ye so la verdad es que no se</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-82"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/82#comment-82" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/82#comment-82" class="permalink" rel="bookmark">Si tienes que abrir una</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/82#comment-82" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-01-06T02:52:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mar, 01/06/2009 - 02:52</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/81#comment-81" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Si tienes que abrir una puerta el circuito y el código del que hablo puede ayudarte, pero para leer y escribir la tarjeta chip vas a tener que buscar información en otro sitio. Yo empezaría por consultar la documentación o la web del fabricante del lector para saber si tiene alguna librería que puedas usar.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-102"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/102#comment-102" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/102#comment-102" class="permalink" rel="bookmark">Hola esta muy buena la ayuda</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/102#comment-102" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-03-17T21:10:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jonathan (no verificado)</span> el Mar, 03/17/2009 - 21:10</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola esta muy buena la ayuda pero hay algo que me tiene loco, trate de hacer uno de estos procedimientos desde una DLL y la verdad no pude o no supe como ponerlo a funcionar, esta es mi función:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">function</span> AbrirPuerto<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span><span style="color: #000000; font-weight: bold;">stdcall</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  DeviceName<span style="color: #000066;">:</span> <span style="color: #000000; font-weight: bold;">array</span><span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">..</span><span style="color: #0000ff;">80</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">of</span> <span style="color: #000066; font-weight: bold;">Char</span><span style="color: #000066;">;</span>
+  ComFile<span style="color: #000066;">:</span><span style="color: #000066; font-weight: bold;">Thandle</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+ 
+   <span style="color: #808080; font-style: italic;">{ primero se abre la comunicacion para lectura y escritura.
+     se utiliza la funcion de Win32 "create file".}</span>
+  <span style="color: #000066;">StrPCopy</span><span style="color: #000066;">(</span>DeviceName<span style="color: #000066;">,</span> <span style="color: #ff0000;">'COM1:'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+  ComFile <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span>DeviceName<span style="color: #000066;">,</span>    GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span> GENERIC_WRITE<span style="color: #000066;">,</span>      <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>    <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span>    OPEN_EXISTING<span style="color: #000066;">,</span>     FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span>   <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+ <span style="color: #000000; font-weight: bold;">if</span> ComFile <span style="color: #000066;">=</span> INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+    Result <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">False</span>
+  <span style="color: #000000; font-weight: bold;">else</span>
+    Result <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">True</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>Pero inmediatamente me sale 6 errores cada uno perteneciente a los parámetros usados por la función "Create File" en las 2 lineas a continuación:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;">  ComFile <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span>DeviceName<span style="color: #000066;">,</span>    GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span> GENERIC_WRITE<span style="color: #000066;">,</span>    <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>    <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span>    OPEN_EXISTING<span style="color: #000066;">,</span>    FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span>    <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+  <span style="color: #000000; font-weight: bold;">if</span> ComFile <span style="color: #000066;">=</span> INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span><span style="color: #000066;">............</span></pre></div>
+<p>La verdad no se que estoy haciendo mal o que me falta colocar dentro de la DLL, sera alguna declaración dentro de "Uses" porque cuando lo hago en un form normal me funciona.</p>
+<p>Me gustaría me pudieras ayudar.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-103"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/103#comment-103" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/103#comment-103" class="permalink" rel="bookmark">Prueba añadiendo Windows a</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/103#comment-103" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-03-17T21:49:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mar, 03/17/2009 - 21:49</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/102#comment-102" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Prueba añadiendo Windows a las uses.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-104"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/104#comment-104" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/104#comment-104" class="permalink" rel="bookmark">Hola ,  Tengo 0 Conocimientos</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/104#comment-104" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-03-19T17:41:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">danotex (no verificado)</span> el Jue, 03/19/2009 - 17:41</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola ,  Tengo 0 Conocimientos de electrónica, Como tengo que hacer para conectar una salida del puerto serie a un relé(donde lo compro) y luego para encender o apagar un Aire creo que necesito un Contactor, este puedo conectarlo al relé??? </p>
+<p>Quiero empezar con lo mas simple que es encender y apagar una luz, que elementos de hardware tengo que comprar y como los tengo que conectar para desde la computadora poder controlar el encendido y apagado de una luz??? Mi objetivo final es el de arriba pero pienso que primero debo poder prender y apagar una lamparita</p>
+<p>Muchas Gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-106"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/106#comment-106" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/106#comment-106" class="permalink" rel="bookmark">Hola, es interesante el</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/106#comment-106" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-03-28T06:59:13+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Paramaconny (no verificado)</span> el Sáb, 03/28/2009 - 06:59</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola, es interesante el circuito. Mi preguta es la siguiente, ¿Este ciruito funciona para activar solamente un torniquete de contacto seco? si es asi, ¿Como se conecta a la tarjeta del torniquete? Consulte al fabricante y me comentó que los contactos secos NO pueden recivir ningún tipo de voltaje. El contacto seco es simplemente hacer un puente entre los dos pin y eso activa el torniquete para permitir el acceso, cuando gira la perilla metálica, el mecanismo interno del torniquete pulsa un boto de un interuptor y bloquea nuevamente el torniquete. Disculpa tantas palabras, espero su respuesta. Gracias, y que tengan un buen tiempo todos en este importante foro.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-108"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/108#comment-108" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/108#comment-108" class="permalink" rel="bookmark">Si he entendido bien quieres</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/108#comment-108" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-03-28T15:28:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 03/28/2009 - 15:28</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/106#comment-106" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Si he entendido bien quieres activar un dispositivo que normalmente se controla por medio de un interruptor, que puentea dos pines. Si es así sencillamente usa el relé que muestro en el esquema para puentear esos dos pines. Al fin y al cabo un relé no es mas que un interruptor controlado por un circuito eléctrico.</p>
+<p><a href="http://es.wikipedia.org/wiki/Rel">http://es.wikipedia.org/wiki/Rel</a>é</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-132"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/132#comment-132" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/132#comment-132" class="permalink" rel="bookmark">Hola muy bueno muchas gracia</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/132#comment-132" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-06-30T13:52:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">73W (no verificado)</span> el Mar, 06/30/2009 - 13:52</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola muy bueno muchas gracia todavía mucho no entiendo .. pero me va a servir jeje grax </p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-207"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/207#comment-207" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/207#comment-207" class="permalink" rel="bookmark">Hola. Hice el programa, pero,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/207#comment-207" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-12-29T03:10:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Dionnis (no verificado)</span> el Mar, 12/29/2009 - 03:10</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola. Hice el programa, pero, como se que esta funcionando sin poner el relé. Como hago para poner mensajes de error en caso que no se active el puerto, hay alguna excepción que devuelva Windows?<br />
+Es interesante el programa, pero siento que falta eso. Por favor ayúdenme.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-208"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/208#comment-208" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/208#comment-208" class="permalink" rel="bookmark">Revisa el valor que devuelven</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/208#comment-208" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-12-29T12:18:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mar, 12/29/2009 - 12:18</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/207#comment-207" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Revisa el valor que devuelven las funciones CreateFile y EscapeCommFunction. La primera devolverá INVALID_HANDLE_VALUE si el puerto esta ocupado por otra aplicación o no esta disponible, y la segunda devolverá cero si no es capaz de activar la patilla RTS. Haciendo los ajustes convenientes en el código para controlar que valores devuelven esas dos funciones, no tendrás ningún problema.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-209"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/209#comment-209" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/209#comment-209" class="permalink" rel="bookmark">Muy buen articulo,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/209#comment-209" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-12-29T15:55:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">DJ-MAD (no verificado)</span> el Mar, 12/29/2009 - 15:55</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Muy buen articulo, enhorabuena. Espero no haber llegado muy tarde y que el hilo no esté cerrado. He probado el código y me funciona perfectamente. Con un led consigo encender, apagar, destellos a distintas velocidades .. con un pequeño control slide en delphi. </p>
+<p>El siguiente paso era poder encender/apagar un bombilla común de una casa. He intentado probar a poner directamente a la salida de los pines del puerto un relé de 6v y no consigo que se mueva. (Como si no tuviese fuerza). Lo de simplificar ... como que quitar el transistor es pasarse n? xD</p>
+<p>Voy a pillarme el transistor para probar. El único problema es q .. ¿el circuito debe alimentarse al usarse un transistor n?.<br />
+En caso que esto funcione .. a ver si se pudiese hacer algo similar mediante usb.</p>
+<p>Gracias. </p>
+<p>PD: Soy programador en delphi. Me gustan mucho estos temas relacionados con la "domotica" .. si puedo ayudar en algún proyecto.. estaría encantado. Enhorabuena!!</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-210"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/210#comment-210" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/210#comment-210" class="permalink" rel="bookmark">Es normal que no puedas</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/210#comment-210" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2009-12-29T20:58:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mar, 12/29/2009 - 20:58</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/209#comment-209" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Es normal que no puedas activar el relé directamente desde el puerto serie, la intensidad que puede suministrar este puerto esta muy limitada, y si bien llega para encender un led o hacer funcionar un ratón de los antiguos, los que iban por puerto serie, no es suficiente para un rele.</p>
+<p>Si utilizas el circuito con el transistor, claro que necesitas alimentación externa. Precisamente esa alimentación externa es la que suministrara esa potencia extra que se necesita para activar el relé.</p>
+<p>Pero si tu objetivo es encender una luz, o algún otra carga de tipo resistivo, y no quieres usar alimentación externa busca en google información sobre "solid state relay" o también puedes echarle un vistazo a esta pagina donde salen varios ejemplos con optoacopladores, para el puerto paralelo, pero básicamente es lo mismo.</p>
+<p><a href="http://www.epanorama.net/circuits/parallel_output.html">http://www.epanorama.net/circuits/parallel_output.html</a></p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-234"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/234#comment-234" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/234#comment-234" class="permalink" rel="bookmark">Hola, estoy queriendo abrir</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/234#comment-234" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-06T16:24:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Marcelo (no verificado)</span> el Sáb, 02/06/2010 - 16:24</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola, estoy queriendo abrir un portero electrónico con un sistema en delphi.<br />
+Esta función me sirve para tal caso?. El portero abre con 12volts.<br />
+SLDS y gracias.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-235"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/235#comment-235" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/235#comment-235" class="permalink" rel="bookmark">Si, si que sirve. 
+Solo</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/235#comment-235" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-06T16:39:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 02/06/2010 - 16:39</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/234#comment-234" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Si, si que sirve. </p>
+<p>Solo tienes que usar el relé como un interruptor para aplicar los 12 voltios al portero.</p>
+<p>Incluso, por ahorrar componentes, se podría sustituir en el esquema el relé por el propio portero automático, siendo así el propio transistor el encargado de activar el portero. Aunque esta opción ya requiere algunos conocimientos de electrónica si no quieres quemar el puerto serie por error.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-237"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/237#comment-237" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/237#comment-237" class="permalink" rel="bookmark">Ahora, si la pc no tiene</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/237#comment-237" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-08T16:09:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonimo (no verificado)</span> el Lun, 02/08/2010 - 16:09</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/235#comment-235" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Ahora, si la pc no tiene puerto serie disponible... se podrá poner un adaptador serie-usb ?. será lo mismo , no quemará nada?<br />
+SLDS y mil gracias por tus respuestas!</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-238"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/238#comment-238" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/238#comment-238" class="permalink" rel="bookmark">No veo porque no. No lo he</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/238#comment-238" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-08T21:06:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Lun, 02/08/2010 - 21:06</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/237#comment-237" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>No veo porque no. No lo he probado, pero si el adaptado Usb-Serie cumple con todos los estándares de la comunicación serie debería de funcionar.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div></div><a id="comment-241"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/241#comment-241" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/241#comment-241" class="permalink" rel="bookmark">AGRADECIMIENTO
+Mis mas</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/241#comment-241" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-24T16:11:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jaime Pacheco (no verificado)</span> el Mié, 02/24/2010 - 16:11</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>AGRADECIMIENTO</p>
+<p>Mis mas sinceros agradecimientos para el admin del tema.<br />
+Quisiera saber si el código de este proyecto me podría servir para<br />
+lograr controlar un lector de etiquetas RFID y recuperar el numero del identificador<br />
+en una variable del programa, no se como leer el valor obtenido por el lector<br />
+que tiene conexión RS232.</p>
+<p>Gracias de antemano.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-242"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/242#comment-242" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/242#comment-242" class="permalink" rel="bookmark">El código que describo mas</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/242#comment-242" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-02-24T20:51:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 02/24/2010 - 20:51</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/241#comment-241" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>El código que describo mas arriba no utiliza el puerto para establecer una comunicación serie, se limita a usar uno de los pines del puerto para activar y desactivar un interruptor.</p>
+<p>En el caso que tu propones te recomendaría usar algunos de los múltiples componentes que hay disponibles para delphi y que permiten leer datos a través del puerto serie.</p>
+<p>Si quieres profundizar mas en el tema te recomiendo que preguntes en alguno de estos foros:<br /><a href="http://www.delphiaccess.com">www.delphiaccess.com</a><br /><a href="http://www.clubdelphi.com">www.clubdelphi.com</a></p>
+<p>Seguro que en cualquiera de los dos te podrán ayudar</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-272"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/272#comment-272" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/272#comment-272" class="permalink" rel="bookmark">Hola, estoy por utilizar el</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/272#comment-272" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-04-18T19:13:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Nando (no verificado)</span> el Dom, 04/18/2010 - 19:13</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola, estoy por utilizar el circuito, pero no me queda claro la conexión del relevador y la toma de corriente eléctrica. Necesito encender/apagar una luz desde C#. Espero puedas aclarar un poco mas el circuito, tengo un relevador de 5 pines (JQC-3FC T73) azul.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-273"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/273#comment-273" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/273#comment-273" class="permalink" rel="bookmark">Pues el relé tiene dos</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/273#comment-273" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-04-18T23:22:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 04/18/2010 - 23:22</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/272#comment-272" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Pues el relé tiene dos patillas que corresponden a la bobina, que son las que aparecen en el circuito. La otras tres pertenecen al interruptor que activa la bobina, y es lo que debes utilizar para manejar la bombilla. Si necesitas mas aclaraciones consulta el manual del relé o pregunta en la tienda donde lo compraste.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-338"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/338#comment-338" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/338#comment-338" class="permalink" rel="bookmark">Saludos Amigo:
+  La verdad es</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/338#comment-338" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-06-17T18:51:11+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">alberto correa (no verificado)</span> el Jue, 06/17/2010 - 18:51</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Saludos Amigo:</p>
+<p>  La verdad es un excelente trabajo este diagrama, lo he probado y funciona a la perfeccion. Solo tengo una duda: para hacer el control de dos dispositivos con el mismo puerto, segun alguna vez leí, se tenian que utilizar las lineas de rts y gnd para uno y cts y gnd para el otro, es asi de simple?</p>
+<p>es decir, seria el mismo circuito y funciones para cts? o me dieron informacion equivocada :D.</p>
+<p>Muchas gracias por esta info, de verdad es muy valiosa</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-340"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/340#comment-340" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/340#comment-340" class="permalink" rel="bookmark">En concreto se usaría RTS y</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/340#comment-340" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-06-17T22:12:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Jue, 06/17/2010 - 22:12</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>En concreto se usaría RTS y DTR (pin 4). El circuito sería el mismo para los dos dispositivos, cada uno conectado a un pin diferente (pin 4 y pin 7), y GND sería común para ambos.</p>
+<p>Para controlar DTR debes usar las constantes CLRDTR y SETDTR al igual que usamos CLRRTS y SETRTS para RTS. Por lo demás el software no necesitaría mas modificación, aunque recuerda que el puerto solo lo debes de abrir una vez aunque lo uses para controlar dos señales diferentes. </p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-474"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/474#comment-474" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/474#comment-474" class="permalink" rel="bookmark">Saludos, una gran duda donde</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/474#comment-474" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-09-24T04:14:18+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://www.malagana.net" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Malagana (no verificado)</a> el Vie, 09/24/2010 - 04:14</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Saludos, una gran duda donde puedo comprar ese dispositivo o una guía paso a paso para construirlo, mis conocimientos de electrónica son prácticamente nulos pero creo que eso es exactamente lo que necesito para activar un pistón neumático conectado a un relevador desde mi programa.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-475"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/475#comment-475" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/475#comment-475" class="permalink" rel="bookmark">Pues no se donde puedes</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/475#comment-475" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-09-24T14:52:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Vie, 09/24/2010 - 14:52</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/474#comment-474" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Pues no se donde puedes comprar algo similar, ya hecho, pero creo que si vas a una tienda de componentes electrónicos, les explicas lo que quieres hacer y le enseñas el esquema te darán alguna solución. Es importante que les expliques lo que quieres hacer porque puede que dispongan de algún dispositivo comercial que haga la misma función y sea barato.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-686"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/686#comment-686" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/686#comment-686" class="permalink" rel="bookmark">Muchas gracias al</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/686#comment-686" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-05-11T20:06:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Carlos (no verificado)</span> el Mié, 05/11/2011 - 20:06</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Muchas gracias al administrador por este aporte... Muy bueno<br />
+Tengo una pregunta, yo estoy colocando el código, exactamente igual al primero de arriba y pienso hacerle un llamado con un botón es decir quedaría así:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">Button1Click</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Activar_RTS<span style="color: #000066;">(</span>COM1<span style="color: #000066;">,</span><span style="color: #0000ff;">4000</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>La pregunta sería, ¿como se yo cual es el COM que debo utilizar?, puesto que he hecho varias pruebas y midiendo con un voltimetro entre las patas RTS y GND, siempre obtengo casi 7 voltios y a pesar de que pasan 4 segundos, la señal siempre esta presente. ¿Cual podría ser mi error? saludos y muchísimas gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-687"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/687#comment-687" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/687#comment-687" class="permalink" rel="bookmark">El COM que debes utilizar me</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/687#comment-687" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-05-11T22:58:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 05/11/2011 - 22:58</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/686#comment-686" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>El COM que debes utilizar me imagino que sera el 1 o el 2 eso dependerá de tu placa base, normalmente estan numerados. El problema puede ser que no este usando los pines correctos, asegúrate que son el 5 y el 7, la mayoría de los conectores tienen numerados los pines con unos numeritos pequeños al lado de cada pin.</p>
+<p>Por otro lado si estas usando un conversor USB/Serie puede que no maneje bien las señales de control, y que por eso no te funcione.</p>
+<p>Para hacer pruebas incluso puedes usar un diodo LED conectado conectado directamente entre las patillas 7 y 5. Este se encenderá y apagara al activar o desactivar RTS. Ni siquiera te hace falta poner una resistencia en serie con el diodo, ya que el puerto serie ya se encarga de limitar la corriente que sale de sus patillas.</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-695"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/695#comment-695" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/695#comment-695" class="permalink" rel="bookmark">hola mi estimado muy buena</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/695#comment-695" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-05-30T16:18:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">yoel calderon (no verificado)</span> el Lun, 05/30/2011 - 16:18</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola mi estimado muy buena aportación y muy interesante para mi en particular de verdad lo que yo estoy intentando hacer es tener lectura de un termistor (esos que sirven para leer temperatura) sin embargo quiero saber si es posible tener la impresión en pantalla en ohmios (a través de cualquier pin)del puerto serie</p>
+<p>El trabajo que nos pidieron realizar es un psicrometro pero yo intento adaptar el psicrometro a una pc a través del puerto serie gracias de antemano.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-696"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/696#comment-696" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/696#comment-696" class="permalink" rel="bookmark">El puerto serie solo tiene</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/696#comment-696" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-05-30T21:42:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Lun, 05/30/2011 - 21:42</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/695#comment-695" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>El puerto serie solo tiene entradas digitales, no analógicas, así que no creo que te sirvan para medir directamente ninguna magnitud analógica (resistencia, voltaje, etc). Si estas decidido a usar el puerto serie deberas utilizar algo que convierta la señal analógica a digital, un microcontrolador por ejemplo.</p>
+<p>Por otro lado, el que si puedes usar es el puerto para el joystick que tienen la mayoría de los PC (bien sea integrado en la placa base o a través de la tarjeta de sonido). Este puerto permite la convertir valores analógicos a digitales. Yo buscaría por este camino</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-800"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/800#comment-800" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/800#comment-800" class="permalink" rel="bookmark">Mi proyecto es encender una</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/800#comment-800" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-10-27T12:57:06+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Mel (no verificado)</span> el Jue, 10/27/2011 - 12:57</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Mi proyecto es encender una calefaccion con el pc, es decir solo on/off con un rele o algo parecido. con el esquema electrico no tengo problemas, puesto que puedo acoplarlo a mis necesidades, pero el tema del software seme escapa. ¿Alguien me puede pasar un programa para xp o vista que controle el pin rts? es decir, un click = on permanente, otro click off. gracias<br />
+P.D. Se admiten sugerencias pero estoy pez en programacion</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-801"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/801#comment-801" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/801#comment-801" class="permalink" rel="bookmark">Puedes pasarte por aquí http:</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/801#comment-801" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-10-27T15:01:24+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Jue, 10/27/2011 - 15:01</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/800#comment-800" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Puedes pasarte por aquí <a href="http://www.delphiaccess.com/forum/delphi/">http://www.delphiaccess.com/forum/delphi/</a> , a lo mejor encuentras a alguien que te haga un programita sencillo usando las funciones que puse arriba.</p>
+<p>Pero ten en cuenta que el programa tiene que permanecer abierto, pues una vez que se cierra se pierde el control sobre el puerto serie, por lo que sería deseable que un programa de las características que pides, se pudiese ocultar sin tener que cerrarlo.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-802"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/802#comment-802" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/802#comment-802" class="permalink" rel="bookmark">Muchas gracias!!!!</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/802#comment-802" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-04T22:30:53+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Viveba (no verificado)</span> el Vie, 11/04/2011 - 22:30</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Muchas gracias!!!!</p>
+<p>me vino más que muy bien esto, y apareció en google a la primera</p>
+<p>Te felicito, y por siempre agradecido!!!</p>
+<p>Y ya que estoy... (mangazo)<br />
+Estoy comenzando a usar a Anduino -nivel hobby-, pretendo manejar un par de servos desde la PC, en el microcontrolador tengo un muy pequeñisimo programa que lee el puerto USB (como puerto serie), al recibir una &quot;A&quot; incrementa en un grado un servo, con &quot;S&quot; decrementa en un grado, &quot;K&quot; y &quot;L&quot; para el otro servo, como notarás, nada complejo.</p>
+<p>Ahora ya desde Delphi 2010: formulario, cuatro TButton... y aquí es justo donde encontré tu gran aporte, pregunta, ¿que cambio para enviar alguno de los caracteres mencionados?</p>
+<p>ah!!!!<br />
+demás está que diga que acepto todo tipo de sugerencias para mi microproyecto.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-803"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/803#comment-803" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/803#comment-803" class="permalink" rel="bookmark">Voy a tener que desempolvar</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/803#comment-803" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-05T00:46:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Sáb, 11/05/2011 - 00:46</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/802#comment-802" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Voy a tener que desempolvar mi Arduino.</p>
+<p>Supongamos el siguiente sketch:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">void setup() 
+{                
+  // Usamos el led que esta conectado al pin13
+  pinMode(13, OUTPUT); 
+  digitalWrite(13, LOW);  
+  // Inicamos el puerto serie a 9600
+  Serial.begin(9600);  
+}
+ 
+void loop() {
+ 
+  char C;
+ 
+  // Si hay datos esperando
+  if (Serial.available() &gt; 0)
+  {
+   C = Serial.read();
+   if (C=='A') digitalWrite(13, HIGH); 
+   if (C=='B') digitalWrite(13, LOW); 
+  } 
+}</pre></div>
+<p>Es decir tenemos que enviar una 'A' para activar el led y una 'B' para apagarlo. Pues desde delphi podemos hacer un simple programa, parecido al "Serial monitor" pero solo la parte de enviar.</p>
+<p>El nucleo del programa seria el siguiente:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">var</span>
+  DCB<span style="color: #000066;">:</span> TDCB<span style="color: #000066;">;</span>
+  Str<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Si no hay nada que enviar salimos</span>
+  <span style="color: #000000; font-weight: bold;">if</span> txtTexto<span style="color: #000066;">.</span><span style="color: #006600;">Text</span> <span style="color: #000066;">=</span> EmptyStr  <span style="color: #000000; font-weight: bold;">then</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Si no hemos abierto ya el puerto lo abrimos</span>
+  <span style="color: #000000; font-weight: bold;">if</span> Puerto <span style="color: #000066;">=</span> INVALID_HANDLE_VALUE  <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">with</span> cmbPuerto <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">if</span> ItemIndex &gt;<span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        Puerto<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'\\.\'</span> <span style="color: #000066;">+</span> Items<span style="color: #000066;">[</span>ItemIndex<span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span> GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span>
+          GENERIC_WRITE<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span> OPEN_EXISTING<span style="color: #000066;">,</span> FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span>
+      <span style="color: #000000; font-weight: bold;">else</span>
+        Exit<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Si no conseguimos abrir el puerto salimos</span>
+  <span style="color: #000000; font-weight: bold;">if</span> Puerto <span style="color: #000066;">=</span> INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    Mensaje<span style="color: #000066;">(</span><span style="color: #ff0000;">'Error al abrir el puerto serie'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Si conseguimos abrir el puerto deshabilitamos la configuracion</span>
+  Groupbox1<span style="color: #000066;">.</span><span style="color: #006600;">Enabled</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Configuramos el puerto</span>
+  Str<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span>cmbComCfg<span style="color: #000066;">.</span><span style="color: #006600;">Text</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  DCB<span style="color: #000066;">.</span><span style="color: #006600;">DCBlength</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>DCB<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> GetCommState<span style="color: #000066;">(</span>Puerto<span style="color: #000066;">,</span>DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">if</span> BuildCommDCB<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">,</span>DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">if</span> SetCommState<span style="color: #000066;">(</span>Puerto<span style="color: #000066;">,</span> DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        Str<span style="color: #000066;">:</span><span style="color: #000066;">=</span> txtTexto<span style="color: #000066;">.</span><span style="color: #006600;">Text</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Enviamos el texto</span>
+        <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">FileWrite</span><span style="color: #000066;">(</span>Puerto<span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">)</span> &lt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          Mensaje<span style="color: #000066;">(</span><span style="color: #ff0000;">'Error al escribir en el puerto serie'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        Exit<span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  Mensaje<span style="color: #000066;">(</span><span style="color: #ff0000;">'Los parámetros de configuración no son correctos'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>El resto del programa lo puedes descarga de <a href="/sites/delphi.jmrds.com/adjuntos/simpleserial_delphi.zip">aquí</a></p>
+<p>Por cierto cuando lo pruebes ten en cuenta que en la placa del Arduino esta conectada la patilla de reset a un pin del puerto serie, de tal manera que al abrir el puerto serie del PC el Arduino se resetea, por lo que en nuestro programa el primer envió siempre activa el reset.</p>
+<p>Espero que te sirva de punto de partida</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-808"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/808#comment-808" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/808#comment-808" class="permalink" rel="bookmark">No esperaba una respuesta tan</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/808#comment-808" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-07T21:13:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Viveba (no verificado)</span> el Lun, 11/07/2011 - 21:13</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>No esperaba una respuesta tan completa y tan rápida.</p>
+<p>Muchas gracias por el tiempo que le dedicas a esto.</p>
+<p>Te cuento, este finde, experimentando con mi proyectito, hice lo siguiente:</p>
+<p>Prog en el Arduino:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">const byte Servo1=8, Servo2=9, Min=20, Max=160, Ret=5;
+byte AngServo1, AngServo2;
+int  APP; //Ancho Pulso Positivo
+int  APN; //Ancho Pulso Negativo
+char val;
+ 
+void setup(){
+  pinMode(Servo1, OUTPUT);
+  pinMode(Servo2, OUTPUT);
+  Serial.begin(9600);
+  Centrar(AngServo1, Servo1);
+  Centrar(AngServo2, Servo2);}
+ 
+void PulsoServo(int Pin, int Ang){
+  APP = (Ang * 10) + 600;
+  APN = (Max * 10) + 600 - APN;
+  digitalWrite(Pin, HIGH);
+  delayMicroseconds(APP);
+  digitalWrite(Pin, LOW);
+  delayMicroseconds(APN);}
+ 
+void loop(){
+  if(Serial.available() &gt; 0){
+    val = Serial.read();
+    switch (val){
+      case '1': {AngServo1++; break;}
+      case '2': {AngServo1--; break;}
+      case '3': {AngServo2++; break;}
+      case '4': {AngServo2--; break;}
+      case '5': {AngServo1++;AngServo2++; break;}
+      case '6': {AngServo1++;AngServo2--; break;}
+      case '7': {AngServo1--;AngServo2++; break;}
+      case '8': {AngServo1--;AngServo2--; break;}
+      case '9': {Centrar(AngServo1, Servo1); Centrar(AngServo2, Servo2); break;}
+    }
+    PulsoServo(Servo1, AngServo1);
+    PulsoServo(Servo2, AngServo2);
+    Serial.print("Angulo Servo_1: ");
+    Serial.print(AngServo1, DEC);
+    Serial.print(" - Angulo Servo_2: ");
+    Serial.print(AngServo2, DEC);
+    Serial.println();
+    Serial.flush();
+    delay(Ret);}
+}
+ 
+void Centrar(byte &amp;A, byte S){
+  for(A = 90; A &gt;=Min; A--){PulsoServo(S, A);}    
+  delay(Ret);
+  for(A =Min; A &lt;=Max; A++){PulsoServo(S, A);}
+  delay(Ret);
+  for(A =Max; A &gt;= 90; A--){PulsoServo(S, A);}
+  delay(Ret);
+  A = 90;
+  PulsoServo(S, A);}</pre></div>
+<p>Y en Delphi:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">procedure</span> AbrirPuerto<span style="color: #000066;">(</span>Puerto<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span> DCB<span style="color: #000066;">:</span> TDCB<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Puerto <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  hPort  <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateFile<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'\\.\'</span><span style="color: #000066;">+</span>Puerto<span style="color: #000066;">)</span><span style="color: #000066;">,</span>
+                       GENERIC_READ <span style="color: #000000; font-weight: bold;">or</span> GENERIC_WRITE<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span>
+                       OPEN_EXISTING<span style="color: #000066;">,</span>FILE_ATTRIBUTE_NORMAL<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span> <span style="color: #000000; font-weight: bold;">begin</span>
+    DCB<span style="color: #000066;">.</span><span style="color: #006600;">DCBlength</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">sizeof</span><span style="color: #000066;">(</span>DCB<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> GetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span> <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #000000; font-weight: bold;">with</span> DCB <span style="color: #000000; font-weight: bold;">do</span> <span style="color: #000000; font-weight: bold;">begin</span>
+        BaudRate <span style="color: #000066;">:</span><span style="color: #000066;">=</span> CBR_9600<span style="color: #000066;">;</span>
+        ByteSize <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span><span style="color: #000066;">;</span>
+        Parity   <span style="color: #000066;">:</span><span style="color: #000066;">=</span> NOPARITY<span style="color: #000066;">;</span>
+        StopBits <span style="color: #000066;">:</span><span style="color: #000066;">=</span> ONESTOPBIT<span style="color: #000066;">;</span>
+        Flags    <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000cc;">$01</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> SetCommState<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span> DCB<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span> Exit
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    CloseHandle<span style="color: #000066;">(</span>hPort<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> INVALID_HANDLE_VALUE
+  <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> Form1<span style="color: #000066;">.</span><span style="color: #006600;">Error</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> CerrarPuerto<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE <span style="color: #000000; font-weight: bold;">then</span> <span style="color: #000000; font-weight: bold;">begin</span>
+    CloseHandle<span style="color: #000066;">(</span>hPort<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    hPort<span style="color: #000066;">:</span><span style="color: #000066;">=</span> INVALID_HANDLE_VALUE<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> Escribir<span style="color: #000066;">(</span>Dato<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Char</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  NumberWritten<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">dword</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hPort &lt;&gt; INVALID_HANDLE_VALUE
+    <span style="color: #000000; font-weight: bold;">then</span> WriteFile<span style="color: #000066;">(</span>hPort<span style="color: #000066;">,</span>Dato<span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>NumberWritten<span style="color: #000066;">,</span><span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">)</span>
+    <span style="color: #000000; font-weight: bold;">else</span> Form1<span style="color: #000066;">.</span><span style="color: #006600;">Error</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">Procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">Error</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Label1<span style="color: #000066;">.</span><span style="color: #006600;">Caption</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'Hay un error con el puerto COM3.'</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#13</span><span style="color: #ff0000;">#10</span> <span style="color: #000066;">+</span>
+                    <span style="color: #ff0000;">'Probablemente esté ocupado.'</span><span style="color: #000066;">;</span>
+  Button1<span style="color: #000066;">.</span><span style="color: #006600;">Enabled</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">False</span><span style="color: #000066;">;</span>
+  Button2<span style="color: #000066;">.</span><span style="color: #006600;">Enabled</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">False</span><span style="color: #000066;">;</span>
+  Button3<span style="color: #000066;">.</span><span style="color: #006600;">Enabled</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">False</span><span style="color: #000066;">;</span>
+  Button4<span style="color: #000066;">.</span><span style="color: #006600;">Enabled</span> <span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">False</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">....</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">Button1Click</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Escribir<span style="color: #000066;">(</span><span style="color: #ff0000;">'1'</span><span style="color: #000066;">)</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">Button2Click</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Escribir<span style="color: #000066;">(</span><span style="color: #ff0000;">'2'</span><span style="color: #000066;">)</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000066;">.......</span>
+<span style="color: #006600;">casi</span> lo mismo para todos los demás tbutton´s
+<span style="color: #000066;">.......</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">FormClose</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">;</span> <span style="color: #000000; font-weight: bold;">var</span> Action<span style="color: #000066;">:</span> TCloseAction<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  CerrarPuerto
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TForm1<span style="color: #000066;">.</span><span style="color: #006600;">FormCreate</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  AbrirPuerto<span style="color: #000066;">(</span><span style="color: #ff0000;">'COM3'</span><span style="color: #000066;">)</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>Y esto es todo, voy a probar YA lo que vos hiciste.</p>
+<p>ah!!!!</p>
+<p>Y para leer el puerto?? Cómo uso el ReadFile?? (es que la ayuda está en inglés...)</p>
+<p>De nuevo, muchas gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-809"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/809#comment-809" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/809#comment-809" class="permalink" rel="bookmark">Aquí http://delphi.jmrds.com/</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/809#comment-809" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-07T23:54:00+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Lun, 11/07/2011 - 23:54</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/808#comment-808" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Aquí <a href="http://delphi.jmrds.com/?q=node/60">http://delphi.jmrds.com/?q=node/60</a> publique un pequeño programa que simula ser una balanza. Si revisas el código veras como puedes usar la función ReadFile para leer datos del puerto serie, y lo que es mas importante como usar la función ClearCommError para saber si hay datos esperando para ser leídos y de esta forma evitar que la función ReadFile se quede esperando indefinidamente mientras le llega información.</p>
+<p>Ojo!!!: Ten en cuenta que yo utilizo una version mas antigua que la tuya de delphi En mi versión (Turbo Delphi) los Strings no son Unicode como en tu versión, por eso si utilizas los códigos que publico puedes tener problemas con los tipos String y PChar. Si ocurre eso intenta declarar las variables String y PChar como AnsiString y PAnsiChar, en la mayoría de los casos eso solucionara el problema.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-810"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/810#comment-810" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/810#comment-810" class="permalink" rel="bookmark">Muchísimas gracias por tu</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/810#comment-810" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-08T02:01:16+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Viveba (no verificado)</span> el Mar, 11/08/2011 - 02:01</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/809#comment-809" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Muchísimas gracias por tu ayuda, ya descargué el simulador de balanza y a estudiar!!</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div><a id="comment-818"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/818#comment-818" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/818#comment-818" class="permalink" rel="bookmark">Amigo estoy armando el</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/818#comment-818" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-30T19:06:26+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Luis (no verificado)</span> el Mié, 11/30/2011 - 19:06</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Amigo estoy armando el circuito pero no consigo el BC517 y coloque fue un reemplazo BC617, pero no activa el rele, alguna sugerencia</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-819"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/819#comment-819" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/819#comment-819" class="permalink" rel="bookmark">Por lo que puedo ver en la</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/819#comment-819" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-11-30T19:16:48+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 11/30/2011 - 19:16</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/818#comment-818" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Por lo que puedo ver en la hoja de características de ese transistor, el orden de las patillas esta invertido con respecto al BC517 ¿has tenido eso en cuenta?</p>
+<p>Por lo demás el circuito es todo un clásico y no debería dar problemas. Así que si no te funciona asegúrate que los diodos estén orientados de forma correcta y que el relé tiene la alimentación adecuada.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-820"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/820#comment-820" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/820#comment-820" class="permalink" rel="bookmark">No se que hago mal, pero no</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/820#comment-820" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-12-01T15:31:10+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Luis (no verificado)</span> el Jue, 12/01/2011 - 15:31</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/819#comment-819" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>No se que hago mal, pero no funciona, la bateria para el rele es 9v y el voltaje del puerto no se si excita al transistor porque no hace nada. Podrias por favor ayudarme</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-821"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/821#comment-821" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/821#comment-821" class="permalink" rel="bookmark">Donde se conecta el - de la</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/821#comment-821" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-12-01T15:36:43+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Luis (no verificado)</span> el Jue, 12/01/2011 - 15:36</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/819#comment-819" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Donde se conecta el - de la pila 9v.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-822"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/822#comment-822" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/822#comment-822" class="permalink" rel="bookmark">Pues el positivo donde pone V</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/822#comment-822" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2011-12-01T15:43:26+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Jue, 12/01/2011 - 15:43</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/8" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/821#comment-821" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Pues el positivo donde pone V+ y el negativo a masa (GND)</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div></div></div><div class="text-center"><ul class="pagination"><li class="active"><span>1</span></li>
+<li><a title="Ir a la página 2" href="/node/8?page=1">2</a></li>
+<li class="next"><a href="/node/8?page=1">next</a></li>
+<li class="pager-last"><a href="/node/8?page=1">last</a></li>
+</ul></div>
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

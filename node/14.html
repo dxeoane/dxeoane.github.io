@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/14" />
+<link rel="canonical" href="/node/14" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Un poco de C | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"jYRH1BJ7yPz7WL_v-k746k8QQVLNdVkJva7HiG1Nyt8","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-14 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Un poco de C</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-14" class="node node-article node-promoted clearfix" about="/node/14" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Un poco de C" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2007-04-15T21:27:57+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 04/15/2007 - 21:27</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Ya avise cuando comencé con esta pagina que no solo hablaría sobre de Delphi. Así que voy a poner por aquí un nuevo juguete con el que estoy entretenido desde hace unos días.  Se trata de un pequeño servidor web realizado en C y pensado para ser utilizado en linux. Para hacernos una idea de lo pequeño que es basta decir que el código cuenta con solo unas 600 lineas.</p>
+<!--break--><p>
+Con ese tamaño no le podemos exigir demasiado, de todas formas ya dije que no aspira a ser mas que un juguete o como mucho una herramienta puntual para transferir archivos de un equipo a otro. Por ahora maneja correctamente los comandos Get y Head , puede enviar archivos, mensajes de texto, listar directorios, codificar/descodificar urls y además es multihilo. Faltan por implementar la autentificación de usuarios, pero eso ya lo haremos mas adelante si es necesario.</p>
+<p>El funcionamiento es sencillo, solo hay que ejecutar pico en un terminal y luego en cualquier navegador utilizar la url <a href="http://127.0.0.1:1978/">http://127.0.0.1:1978/</a> si es en el mismo equipo o <a href="http://tuip:1978/">http://tuip:1978/</a> si es desde otro equipo de tu red. Se puede ejecutar sin usar el terminal, pero entonces el programa permanece oculto y no mostraría ni mensajes, ni errores (si los hubiera). Una vez que accedemos a esa url vemos un listado de todo el sistema de ficheros, aquí es importante recordar que el programa tiene los mismos permisos de lectura que el usuario que lo ejecuta (para mas adelante estoy pensando en utilizar algo como chroot para cambiar el directorio raíz del proceso). </p>
+<p>Como siempre, se admiten sugerencias, consejos, criticas pero siempre recordando que se trata de un juguete y no de un servidor serio, yo al menos pienso utilizarlo como venia haciéndolo con su hermano gemelo en windows, para pasar archivos de un ordenador a otro rápidamente y sin tener que andar instalando nada, ni cambiando la configuración de las carpetas compartidas, etc ... un par de clicks y copiando, sin complicarse (muy útil cuando quieres pasar archivos al portátil de un amigo).</p>
+<div class="geshifilter">
+<pre class="c geshifilter-c" style="font-family:monospace;"><span style="color: #339933;">#include &lt;getopt.h&gt;</span>
+<span style="color: #339933;">#include &lt;dirent.h&gt;</span>
+<span style="color: #339933;">#include &lt;fcntl.h&gt;</span>
+<span style="color: #339933;">#include &lt;stdio.h&gt;</span>
+<span style="color: #339933;">#include &lt;stdlib.h&gt;</span>
+<span style="color: #339933;">#include &lt;string.h&gt;</span>
+<span style="color: #339933;">#include &lt;errno.h&gt;</span>
+<span style="color: #339933;">#include &lt;signal.h&gt;</span>
+<span style="color: #339933;">#include &lt;unistd.h&gt;</span>
+<span style="color: #339933;">#include &lt;netinet/in.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/select.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/sendfile.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/socket.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/stat.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/types.h&gt;</span>
+<span style="color: #339933;">#include &lt;sys/wait.h&gt;</span>
+ 
+<span style="color: #993333;">const</span> <span style="color: #993333;">char</span> hex<span style="color: #009900;">[</span><span style="color: #009900;">]</span> <span style="color: #339933;">=</span> <span style="color: #ff0000;">"0123456789ABCDEF"</span><span style="color: #339933;">;</span>
+ 
+<span style="color: #666666; font-style: italic;">// Configuracion</span>
+<span style="color: #993333;">int</span> buffersize <span style="color: #339933;">=</span> <span style="color: #0000dd;">8</span><span style="color: #339933;">*</span><span style="color: #0000dd;">1024</span><span style="color: #339933;">;</span>
+<span style="color: #993333;">int</span> inetd <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+<span style="color: #993333;">int</span> puerto <span style="color: #339933;">=</span> <span style="color: #0000dd;">1978</span><span style="color: #339933;">;</span>
+<span style="color: #993333;">int</span> timeout <span style="color: #339933;">=</span> <span style="color: #0000dd;">30</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">// Variables globales</span>
+<span style="color: #993333;">char</span> <span style="color: #339933;">*</span>comando <span style="color: #339933;">=</span> NULL<span style="color: #339933;">;</span>
+<span style="color: #993333;">char</span> <span style="color: #339933;">*</span>ruta <span style="color: #339933;">=</span> NULL<span style="color: #339933;">;</span>
+ 
+<span style="color: #666666; font-style: italic;">// Imprime mensajes</span>
+<span style="color: #993333;">void</span> printmsg<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>inetd<span style="color: #009900;">)</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"[%d] %s<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span><span style="color: #009900;">(</span><span style="color: #993333;">int</span><span style="color: #009900;">)</span> getpid<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">,</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Imprime mensajes de error</span>
+<span style="color: #993333;">void</span> printerror<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>inetd<span style="color: #009900;">)</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"[%d] %s: %s<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span><span style="color: #009900;">(</span><span style="color: #993333;">int</span><span style="color: #009900;">)</span> getpid<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">,</span>str<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strerror.html"><span style="color: #000066;">strerror</span></a><span style="color: #009900;">(</span>errno<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Concatena dos cadenas</span>
+<span style="color: #993333;">int</span> stradd<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">**</span>dest<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>src<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>src<span style="color: #009900;">)</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>  
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>dest<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  str <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/realloc.html"><span style="color: #000066;">realloc</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>dest<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>dest<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  
+ <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> 
+ <span style="color: #009900;">{</span>  
+  str <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>str<span style="color: #009900;">)</span>
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/memset.html"><span style="color: #000066;">memset</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span><span style="color: #0000dd;">0</span><span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>str<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strcat.html"><span style="color: #000066;">strcat</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span>src<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #339933;">*</span>dest <span style="color: #339933;">=</span> str<span style="color: #339933;">;</span>  
+  <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Codifica una url</span>
+<span style="color: #993333;">int</span> urlencode<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">**</span>dest<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>src<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span> 
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>src<span style="color: #009900;">)</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>  
+ str <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span><span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">*</span> <span style="color: #0000dd;">3</span><span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>str<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #339933;">*</span>dest <span style="color: #339933;">=</span> str<span style="color: #339933;">;</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/memset.html"><span style="color: #000066;">memset</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span><span style="color: #0000dd;">0</span><span style="color: #339933;">,</span><span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">*</span> <span style="color: #0000dd;">3</span><span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+  <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&gt;=</span> <span style="color: #ff0000;">'a'</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&lt;=</span> <span style="color: #ff0000;">'z'</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span> 
+       <span style="color: #009900;">(</span><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&gt;=</span> <span style="color: #ff0000;">'A'</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&lt;=</span> <span style="color: #ff0000;">'Z'</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span>
+       <span style="color: #009900;">(</span><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&gt;=</span> <span style="color: #ff0000;">'0'</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&lt;=</span> <span style="color: #ff0000;">'9'</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> <span style="color: #339933;">*</span>src<span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> <span style="color: #ff0000;">'%'</span><span style="color: #339933;">;</span>
+    str<span style="color: #339933;">++;</span>
+    <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> hex<span style="color: #009900;">[</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&gt;&gt;</span> <span style="color: #0000dd;">4</span><span style="color: #009900;">]</span><span style="color: #339933;">;</span>
+    str<span style="color: #339933;">++;</span> 
+    <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> hex<span style="color: #009900;">[</span><span style="color: #339933;">*</span>src <span style="color: #339933;">&amp;</span> <span style="color: #208080;">0x0f</span><span style="color: #009900;">]</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span>
+   str<span style="color: #339933;">++;</span>
+   src<span style="color: #339933;">++;</span>
+  <span style="color: #009900;">}</span> 
+  <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>  
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Descodifica una url</span>
+<span style="color: #993333;">int</span> urldecode<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">**</span>dest<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>src<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>  
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> c<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> esc <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span> 
+ 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>src<span style="color: #009900;">)</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>  
+ str <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>  
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>str<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #339933;">*</span>dest <span style="color: #339933;">=</span> str<span style="color: #339933;">;</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/memset.html"><span style="color: #000066;">memset</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span><span style="color: #0000dd;">0</span><span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>src<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+  <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">==</span> <span style="color: #ff0000;">'%'</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    esc <span style="color: #339933;">=</span> <span style="color: #0000dd;">2</span><span style="color: #339933;">;</span>
+    c <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #b1b100;">switch</span><span style="color: #009900;">(</span>esc<span style="color: #009900;">)</span> 
+    <span style="color: #009900;">{</span>
+     <span style="color: #b1b100;">case</span> <span style="color: #0000dd;">2</span><span style="color: #339933;">:</span> 
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>hex<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/toupper.html"><span style="color: #000066;">toupper</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+       <span style="color: #009900;">{</span>
+        c <span style="color: #339933;">=</span> <span style="color: #009900;">(</span><span style="color: #993333;">char</span><span style="color: #009900;">)</span><span style="color: #009900;">(</span><span style="color: #009900;">(</span>c <span style="color: #339933;">+</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>hex<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/toupper.html"><span style="color: #000066;">toupper</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">-</span>hex<span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">&lt;&lt;</span> <span style="color: #0000dd;">4</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+        esc <span style="color: #339933;">=</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+       <span style="color: #009900;">}</span>
+       <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+     <span style="color: #b1b100;">case</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">:</span> 
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>hex<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/toupper.html"><span style="color: #000066;">toupper</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+       <span style="color: #009900;">{</span>         
+        <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> <span style="color: #009900;">(</span><span style="color: #993333;">char</span><span style="color: #009900;">)</span><span style="color: #009900;">(</span>c <span style="color: #339933;">+</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>hex<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/toupper.html"><span style="color: #000066;">toupper</span></a><span style="color: #009900;">(</span><span style="color: #339933;">*</span>src<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">-</span>hex<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+        str<span style="color: #339933;">++;</span>
+        esc <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+       <span style="color: #009900;">}</span>
+       <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+     <span style="color: #b1b100;">default</span><span style="color: #339933;">:</span> 
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>src <span style="color: #339933;">==</span> <span style="color: #ff0000;">'+'</span><span style="color: #009900;">)</span>
+         <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> <span style="color: #ff0000;">' '</span><span style="color: #339933;">;</span>
+       <span style="color: #b1b100;">else</span>       
+         <span style="color: #339933;">*</span>str <span style="color: #339933;">=</span> <span style="color: #339933;">*</span>src<span style="color: #339933;">;</span>
+       str<span style="color: #339933;">++;</span>
+    <span style="color: #009900;">}</span>
+   <span style="color: #009900;">}</span>    
+   src<span style="color: #339933;">++;</span>
+  <span style="color: #009900;">}</span>   
+  <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>  
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Obtiene informacion sobre un archivo</span>
+<span style="color: #993333;">int</span> fileinfo<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">*</span>dir<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>nombre<span style="color: #339933;">,</span> <span style="color: #993333;">struct</span> stat <span style="color: #339933;">*</span>st<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> len<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> barra <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+ 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">!</span>nombre<span style="color: #009900;">)</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span> 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  len <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>len <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dir<span style="color: #009900;">[</span>len<span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">]</span><span style="color: #339933;">!=</span><span style="color: #ff0000;">'/'</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span>
+     len <span style="color: #339933;">+=</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+     barra <span style="color: #339933;">=</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">}</span> 
+ <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> len <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+ len <span style="color: #339933;">=</span> len <span style="color: #339933;">+</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>nombre<span style="color: #009900;">)</span> <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">;</span> 
+ str <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span>len<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>str<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/memset.html"><span style="color: #000066;">memset</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span><span style="color: #0000dd;">0</span><span style="color: #339933;">,</span>len<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>  
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strcpy.html"><span style="color: #000066;">strcpy</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span>dir<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>barra<span style="color: #009900;">)</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strcat.html"><span style="color: #000066;">strcat</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"/"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span>
+  <span style="color: #666666; font-style: italic;">// str = dir + "\" + nombre </span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strcat.html"><span style="color: #000066;">strcat</span></a><span style="color: #009900;">(</span>str<span style="color: #339933;">,</span>nombre<span style="color: #009900;">)</span><span style="color: #339933;">;</span>  
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>stat<span style="color: #009900;">(</span>str<span style="color: #339933;">,</span>st<span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>   
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span> 
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Escibe las cabeceras de la respuesta</span>
+<span style="color: #993333;">void</span> cabeceras<span style="color: #009900;">(</span><span style="color: #993333;">int</span> codigo<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>res<span style="color: #339933;">,</span> <span style="color: #993333;">int</span> lon<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>tipo<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span> 
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span style="color: #000066;">printf</span></a><span style="color: #009900;">(</span><span style="color: #ff0000;">"HTTP/1.1 %d %s<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span>codigo<span style="color: #339933;">,</span>res<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #666666; font-style: italic;">// Si la longitud es menor de cero la ignoramos</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>lon <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span style="color: #000066;">printf</span></a><span style="color: #009900;">(</span><span style="color: #ff0000;">"Content-Length: %d<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span>lon<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #666666; font-style: italic;">// Si se ha determinado el tipo, lo incluimos</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>tipo<span style="color: #009900;">)</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span style="color: #000066;">printf</span></a><span style="color: #009900;">(</span><span style="color: #ff0000;">"Content-Type: %s<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span>tipo<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #666666; font-style: italic;">// Enviamos una linea en blanco</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span style="color: #000066;">printf</span></a><span style="color: #009900;">(</span><span style="color: #ff0000;">"<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fflush.html"><span style="color: #000066;">fflush</span></a><span style="color: #009900;">(</span>NULL<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Envia un mensaje de texto como respuesta</span>
+<span style="color: #993333;">void</span> mensaje<span style="color: #009900;">(</span><span style="color: #993333;">int</span> codigo<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>res<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #666666; font-style: italic;">// Escribimos las cabeceras de la respuesta</span>
+ cabeceras<span style="color: #009900;">(</span>codigo<span style="color: #339933;">,</span>res<span style="color: #339933;">,</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>str<span style="color: #009900;">)</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"text/html"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #666666; font-style: italic;">// Si el comando no es HEAD, escribimos en el socket el mensaje</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>strcasecmp<span style="color: #009900;">(</span>comando<span style="color: #339933;">,</span><span style="color: #ff0000;">"HEAD"</span><span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>  
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span style="color: #000066;">printf</span></a><span style="color: #009900;">(</span><span style="color: #ff0000;">"%s"</span><span style="color: #339933;">,</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fflush.html"><span style="color: #000066;">fflush</span></a><span style="color: #009900;">(</span>NULL<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span> 
+ <span style="color: #666666; font-style: italic;">// Si el codigo es diferente de 200 (OK) lo mostramos</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>codigo <span style="color: #339933;">!=</span> <span style="color: #0000dd;">200</span><span style="color: #009900;">)</span>
+   printmsg<span style="color: #009900;">(</span>res<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Envia un listado con el contenido de un directorio</span>
+<span style="color: #993333;">void</span> indice<span style="color: #009900;">(</span><span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>url<span style="color: #339933;">;</span>
+ DIR <span style="color: #339933;">*</span>dir<span style="color: #339933;">;</span>
+ <span style="color: #993333;">struct</span> dirent <span style="color: #339933;">*</span>ent<span style="color: #339933;">;</span>
+ <span style="color: #993333;">struct</span> stat st<span style="color: #339933;">;</span> 
+ 
+ <span style="color: #666666; font-style: italic;">// Abrimos el directorio</span>
+ dir <span style="color: #339933;">=</span> opendir<span style="color: #009900;">(</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>      
+  str <span style="color: #339933;">=</span> NULL<span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;<span style="color: #000099; font-weight: bold;">\n</span>&lt;h1&gt;Indice de "</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span> 
+   stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;/h1&gt;<span style="color: #000099; font-weight: bold;">\n</span>&lt;pre&gt;<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #666666; font-style: italic;">// Recorremos el directorio</span>
+   <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span>ent <span style="color: #339933;">=</span> readdir<span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span><span style="color: #009900;">)</span> 
+   <span style="color: #009900;">{</span>  
+    <span style="color: #666666; font-style: italic;">// Obtenemos informacion sobre el archivo  </span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>fileinfo<span style="color: #009900;">(</span>ruta<span style="color: #339933;">,</span>ent<span style="color: #339933;">-&gt;</span>d_name<span style="color: #339933;">,&amp;</span>st<span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span>
+     <span style="color: #666666; font-style: italic;">// Lo agregamos al listado</span>
+     stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;a href=<span style="color: #000099; font-weight: bold;">\"</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     urlencode<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>url<span style="color: #339933;">,</span>ent<span style="color: #339933;">-&gt;</span>d_name<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span>url<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>url<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <span style="color: #666666; font-style: italic;">// Si es un directorio agregamos una '/' al final</span>
+     <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>S_ISDIR<span style="color: #009900;">(</span>st.<span style="color: #202020;">st_mode</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+       stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"/"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"<span style="color: #000099; font-weight: bold;">\"</span>&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span>ent<span style="color: #339933;">-&gt;</span>d_name<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;/a&gt;<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">}</span>
+   <span style="color: #009900;">}</span>
+   stradd<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;/pre&gt;<span style="color: #000099; font-weight: bold;">\n</span>&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #666666; font-style: italic;">// Enviamos el listado</span>
+   mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">200</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"OK"</span><span style="color: #339933;">,</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>str<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span>
+  closedir<span style="color: #009900;">(</span>dir<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Envia un archivo</span>
+<span style="color: #993333;">void</span> enviar<span style="color: #009900;">(</span><span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">struct</span> stat st<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> f<span style="color: #339933;">;</span>
+ <span style="color: #993333;">off_t</span> offset <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+ 
+ <span style="color: #666666; font-style: italic;">// Comprobamos si el archivo existe</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>fileinfo<span style="color: #009900;">(</span>NULL<span style="color: #339933;">,</span>ruta<span style="color: #339933;">,&amp;</span>st<span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #666666; font-style: italic;">// Comprobamos si es un directorio</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>S_ISDIR<span style="color: #009900;">(</span>st.<span style="color: #202020;">st_mode</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #666666; font-style: italic;">// Si es un directorio enviamos su indice</span>
+   indice<span style="color: #009900;">(</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>	
+  <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span>
+   <span style="color: #666666; font-style: italic;">// Si es un archivo intentamos leerlo</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>f <span style="color: #339933;">=</span> open<span style="color: #009900;">(</span>ruta<span style="color: #339933;">,</span> O_RDONLY<span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #666666; font-style: italic;">// Escribimos las cabecera</span>
+    cabeceras<span style="color: #009900;">(</span><span style="color: #0000dd;">200</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"OK"</span><span style="color: #339933;">,</span>st.<span style="color: #202020;">st_size</span><span style="color: #339933;">,</span>NULL<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #666666; font-style: italic;">// Si el comando no es HEAD enviamos el fichero</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>strcasecmp<span style="color: #009900;">(</span>comando<span style="color: #339933;">,</span><span style="color: #ff0000;">"HEAD"</span><span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span> 
+     sendfile<span style="color: #009900;">(</span>STDOUT_FILENO<span style="color: #339933;">,</span>f<span style="color: #339933;">,&amp;</span>offset<span style="color: #339933;">,</span>st.<span style="color: #202020;">st_size</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>    
+    <span style="color: #009900;">}</span>
+    close<span style="color: #009900;">(</span>f<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> 
+     <span style="color: #666666; font-style: italic;">// Respondemos que no encontramos el archivo</span>
+     mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">404</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"Not Found"</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;&lt;h1&gt;Not Found&lt;/h1&gt;&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> 
+   <span style="color: #666666; font-style: italic;">// Respondemos que no encontramos el archivo</span>
+   mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">404</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"Not Found"</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;&lt;h1&gt;Not Found&lt;/h1&gt;&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>		
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #666666; font-style: italic;">// Lee una linea, utilizando un buffer</span>
+<span style="color: #993333;">int</span> readline<span style="color: #009900;">(</span><span style="color: #993333;">char</span> <span style="color: #339933;">*</span>buf<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>line<span style="color: #339933;">,</span> <span style="color: #993333;">int</span> count<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span> 
+ <span style="color: #993333;">int</span> tout<span style="color: #339933;">;</span>
+ fd_set fds<span style="color: #339933;">;</span>
+ <span style="color: #993333;">struct</span> timeval tv<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> retval<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>c<span style="color: #339933;">;</span> 
+ 
+ <span style="color: #666666; font-style: italic;">// 20 * 50000 us = 1 segundo</span>
+ tout <span style="color: #339933;">=</span> timeout <span style="color: #339933;">*</span> <span style="color: #0000dd;">20</span><span style="color: #339933;">;</span>
+ <span style="color: #666666; font-style: italic;">// No salimos del bucle hasta encontrar '\n' o llenar el buffer</span>
+ <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span><span style="color: #339933;">!</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>buf<span style="color: #339933;">,</span><span style="color: #ff0000;">'<span style="color: #000099; font-weight: bold;">\n</span>'</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span> <span style="color: #339933;">&lt;</span> count<span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>  
+  FD_ZERO<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>fds<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  FD_SET<span style="color: #009900;">(</span>STDIN_FILENO<span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>fds<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  tv.<span style="color: #202020;">tv_sec</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+  tv.<span style="color: #202020;">tv_usec</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">50000</span><span style="color: #339933;">;</span>
+  <span style="color: #666666; font-style: italic;">// Comprobamos si hay algo que leer</span>
+  retval <span style="color: #339933;">=</span> select<span style="color: #009900;">(</span>STDIN_FILENO <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>fds<span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>tv<span style="color: #009900;">)</span><span style="color: #339933;">;</span>  
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #666666; font-style: italic;">// Ignoramos la interrupciones</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>errno <span style="color: #339933;">=</span> EINTR<span style="color: #009900;">)</span>
+     <span style="color: #b1b100;">continue</span><span style="color: #339933;">;</span>
+   printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"select()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>  
+   <span style="color: #666666; font-style: italic;">// Reseteamos el timeout</span>
+   tout <span style="color: #339933;">=</span> timeout <span style="color: #339933;">*</span> <span style="color: #0000dd;">20</span><span style="color: #339933;">;</span>
+   <span style="color: #666666; font-style: italic;">// Apuntamos al caracter nulo</span>
+   c <span style="color: #339933;">=</span> buf <span style="color: #339933;">+</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #666666; font-style: italic;">// Escribimos el texto nuevo a continuacion del anterior</span>
+   retval <span style="color: #339933;">=</span> read<span style="color: #009900;">(</span>STDIN_FILENO<span style="color: #339933;">,</span> c<span style="color: #339933;">,</span> count <span style="color: #339933;">-</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"read()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+     <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>  
+   <span style="color: #666666; font-style: italic;">// Colocamos el caracter nulo al final del texto recibido</span>
+   c<span style="color: #009900;">[</span>retval<span style="color: #009900;">]</span> <span style="color: #339933;">=</span> <span style="color: #ff0000;">'<span style="color: #006699; font-weight: bold;">\0</span>'</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #339933;">--</span>tout<span style="color: #339933;">;</span>
+   <span style="color: #666666; font-style: italic;">// Si se cumple el timeout</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>tout <span style="color: #339933;">&lt;</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #666666; font-style: italic;">// Salimos </span>
+    mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">408</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"Request Timeout"</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;&lt;h1&gt;Request Timeout&lt;/h1&gt;&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span>
+  <span style="color: #009900;">}</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #666666; font-style: italic;">// Si encontramos el caracter '\n'</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strchr.html"><span style="color: #000066;">strchr</span></a><span style="color: #009900;">(</span>buf<span style="color: #339933;">,</span><span style="color: #ff0000;">'<span style="color: #000099; font-weight: bold;">\n</span>'</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #666666; font-style: italic;">// Comenzamos a copiar la linea</span>
+  c <span style="color: #339933;">=</span> buf<span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>c <span style="color: #339933;">!=</span> <span style="color: #ff0000;">'<span style="color: #000099; font-weight: bold;">\n</span>'</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+    <span style="color: #666666; font-style: italic;">// Eliminamos el caracter '\r'</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>c <span style="color: #339933;">!=</span> <span style="color: #ff0000;">'<span style="color: #000099; font-weight: bold;">\r</span>'</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span>
+     <span style="color: #339933;">*</span>line <span style="color: #339933;">=</span> <span style="color: #339933;">*</span>c<span style="color: #339933;">;</span>
+     line<span style="color: #339933;">++;</span>
+    <span style="color: #009900;">}</span>
+   c<span style="color: #339933;">++;</span>
+  <span style="color: #009900;">}</span>
+  <span style="color: #666666; font-style: italic;">// Colocamos el carcater nulo al final de la linea</span>
+  <span style="color: #339933;">*</span>line <span style="color: #339933;">=</span> <span style="color: #ff0000;">'<span style="color: #006699; font-weight: bold;">\0</span>'</span><span style="color: #339933;">;</span>
+  <span style="color: #666666; font-style: italic;">// Desplazamos el resto del texto </span>
+  c<span style="color: #339933;">++;</span>
+  <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>c<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #339933;">*</span>buf <span style="color: #339933;">=</span> <span style="color: #339933;">*</span>c<span style="color: #339933;">;</span>
+   buf<span style="color: #339933;">++;</span>
+   c<span style="color: #339933;">++;</span>
+  <span style="color: #009900;">}</span> 
+  <span style="color: #666666; font-style: italic;">// Colocamos el caracter nulo al final del texto</span>
+  <span style="color: #339933;">*</span>buf <span style="color: #339933;">=</span> <span style="color: #ff0000;">'<span style="color: #006699; font-weight: bold;">\0</span>'</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #666666; font-style: italic;">// Si llegamos aqui, es que se ha llenado el buffer</span>
+ mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">414</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"Request Too Long"</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;&lt;h1&gt;Request Too Long&lt;/h1&gt;&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span> 
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #993333;">void</span> conexion<span style="color: #009900;">(</span><span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>buf<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>linea<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>saveptr<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>token<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span>
+ 
+ <span style="color: #666666; font-style: italic;">// Reservamos memoria para</span>
+ buf <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span>buffersize<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  linea <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/malloc.html"><span style="color: #000066;">malloc</span></a><span style="color: #009900;">(</span>buffersize<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #666666; font-style: italic;">// Bucle de la conexion</span>
+   <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>readline<span style="color: #009900;">(</span>buf<span style="color: #339933;">,</span>linea<span style="color: #339933;">,</span>buffersize <span style="color: #339933;">-</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span> 
+      <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span> 
+    <span style="color: #666666; font-style: italic;">// Ignoramos las lineas en blanco</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span> <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span>
+     <span style="color: #666666; font-style: italic;">// Mostramos la peticion </span>
+     printmsg<span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <span style="color: #666666; font-style: italic;">// Separamos el comando</span>
+     token <span style="color: #339933;">=</span> strtok_r<span style="color: #009900;">(</span>linea<span style="color: #339933;">,</span> <span style="color: #ff0000;">" <span style="color: #000099; font-weight: bold;">\t</span><span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>saveptr<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>token <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span>strcasecmp<span style="color: #009900;">(</span>token<span style="color: #339933;">,</span><span style="color: #ff0000;">"GET"</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span> <span style="color: #009900;">(</span>strcasecmp<span style="color: #009900;">(</span>token<span style="color: #339933;">,</span><span style="color: #ff0000;">"HEAD"</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+     <span style="color: #009900;">{</span>
+      comando <span style="color: #339933;">=</span> strdup<span style="color: #009900;">(</span>token<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #666666; font-style: italic;">// Separamos el documento</span>
+      token <span style="color: #339933;">=</span> strtok_r<span style="color: #009900;">(</span>NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">" ?<span style="color: #000099; font-weight: bold;">\t</span><span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>saveptr<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>token<span style="color: #009900;">)</span>
+      <span style="color: #009900;">{</span>
+       ruta <span style="color: #339933;">=</span> strdup<span style="color: #009900;">(</span>token<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+       <span style="color: #666666; font-style: italic;">// Ignoramos el resto de cabeceras (por ahora) </span>
+       <span style="color: #b1b100;">do</span> <span style="color: #009900;">{</span>
+         <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>readline<span style="color: #009900;">(</span>buf<span style="color: #339933;">,</span>linea<span style="color: #339933;">,</span>buffersize <span style="color: #339933;">-</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+         <span style="color: #009900;">{</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>comando<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          <span style="color: #b1b100;">return</span><span style="color: #339933;">;</span> 
+         <span style="color: #009900;">}</span>          
+       <span style="color: #009900;">}</span> <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/strlen.html"><span style="color: #000066;">strlen</span></a><span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span><span style="color: #339933;">&gt;</span><span style="color: #0000dd;">0</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>       
+       <span style="color: #666666; font-style: italic;">// Descodificamos el nombre del documento</span>
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>urldecode<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>str<span style="color: #339933;">,</span>ruta<span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+       <span style="color: #009900;">{</span>
+        <span style="color: #666666; font-style: italic;">// Intentamos enviar el documento</span>
+        <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+        ruta <span style="color: #339933;">=</span> str<span style="color: #339933;">;</span>
+        enviar<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+       <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span>
+         mensaje<span style="color: #009900;">(</span><span style="color: #0000dd;">404</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"Not Found"</span><span style="color: #339933;">,</span><span style="color: #ff0000;">"&lt;html&gt;&lt;h1&gt;Not Found&lt;/h1&gt;&lt;/html&gt;"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>ruta<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #009900;">}</span>
+      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>comando<span style="color: #009900;">)</span><span style="color: #339933;">;</span>      
+     <span style="color: #009900;">}</span> 
+    <span style="color: #009900;">}</span>    
+   <span style="color: #009900;">}</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>linea<span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+  <span style="color: #009900;">}</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/free.html"><span style="color: #000066;">free</span></a><span style="color: #009900;">(</span>buf<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+<span style="color: #009900;">}</span> 
+ 
+<span style="color: #993333;">void</span> signalhandler<span style="color: #009900;">(</span><span style="color: #993333;">int</span> signal_numer<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">int</span> retval<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> status<span style="color: #339933;">;</span>
+ 
+ <span style="color: #b1b100;">switch</span><span style="color: #009900;">(</span>signal_numer<span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #b1b100;">case</span> SIGCHLD<span style="color: #339933;">:</span>
+    <span style="color: #666666; font-style: italic;">// Limpiamos los zombies</span>
+    <span style="color: #b1b100;">do</span> <span style="color: #009900;">{</span>
+      retval <span style="color: #339933;">=</span> waitpid<span style="color: #009900;">(</span><span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #339933;">,&amp;</span>status<span style="color: #339933;">,</span>WNOHANG<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">}</span> <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>retval <span style="color: #339933;">!=</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;&amp;</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #993333;">void</span> servidor<span style="color: #009900;">(</span><span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">struct</span> sigaction sa<span style="color: #339933;">;</span> 
+ <span style="color: #993333;">int</span> servidor<span style="color: #339933;">,</span> cliente<span style="color: #339933;">;</span>
+ <span style="color: #993333;">struct</span> sockaddr_in <a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a><span style="color: #339933;">;</span>
+ fd_set fds<span style="color: #339933;">;</span>
+ <span style="color: #993333;">struct</span> timeval tv<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> retval<span style="color: #339933;">;</span> 
+ 
+ <span style="color: #666666; font-style: italic;">// Registramos el manejador</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/memset.html"><span style="color: #000066;">memset</span></a><span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>sa<span style="color: #339933;">,</span><span style="color: #0000dd;">0</span><span style="color: #339933;">,</span><span style="color: #993333;">sizeof</span><span style="color: #009900;">(</span>sa<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ sa.<span style="color: #202020;">sa_handler</span> <span style="color: #339933;">=</span> <span style="color: #339933;">&amp;</span>signalhandler<span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>sigaction<span style="color: #009900;">(</span>SIGCHLD<span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>sa<span style="color: #339933;">,</span> NULL<span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span>
+  printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"sigaction()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #b1b100;">return</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span> 
+ <span style="color: #666666; font-style: italic;">// Creamos el socket</span>
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>servidor <span style="color: #339933;">=</span> socket<span style="color: #009900;">(</span>AF_INET<span style="color: #339933;">,</span> SOCK_STREAM<span style="color: #339933;">,</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+ <span style="color: #009900;">{</span> 
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a>.<span style="color: #202020;">sin_family</span> <span style="color: #339933;">=</span> AF_INET<span style="color: #339933;">;</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a>.<span style="color: #202020;">sin_port</span> <span style="color: #339933;">=</span> htons<span style="color: #009900;">(</span>puerto<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a>.<span style="color: #202020;">sin_addr</span>.<span style="color: #202020;">s_addr</span> <span style="color: #339933;">=</span> htonl<span style="color: #009900;">(</span>INADDR_ANY<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #666666; font-style: italic;">// bind()</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>bind<span style="color: #009900;">(</span>servidor<span style="color: #339933;">,</span><span style="color: #009900;">(</span><span style="color: #993333;">struct</span> sockaddr <span style="color: #339933;">*</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a><span style="color: #339933;">,</span><span style="color: #993333;">sizeof</span><span style="color: #009900;">(</span><span style="color: #993333;">struct</span> sockaddr_in<span style="color: #009900;">)</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+  <span style="color: #009900;">{</span>
+   <span style="color: #666666; font-style: italic;">// listen()</span>
+   <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>listen<span style="color: #009900;">(</span>servidor<span style="color: #339933;">,</span> <span style="color: #0000dd;">16</span><span style="color: #009900;">)</span> <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #666666; font-style: italic;">// Bucle principal</span>
+    <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+    <span style="color: #009900;">{</span>
+     FD_ZERO<span style="color: #009900;">(</span><span style="color: #339933;">&amp;</span>fds<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     FD_SET<span style="color: #009900;">(</span>servidor<span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>fds<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     tv.<span style="color: #202020;">tv_sec</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+     tv.<span style="color: #202020;">tv_usec</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">50000</span><span style="color: #339933;">;</span>
+     <span style="color: #666666; font-style: italic;">// Comprobamos si hay conexiones esperando - select()</span>
+     retval <span style="color: #339933;">=</span> select<span style="color: #009900;">(</span>servidor <span style="color: #339933;">+</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>fds<span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>tv<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span> <span style="color: #009900;">)</span>
+     <span style="color: #009900;">{</span>
+      <span style="color: #666666; font-style: italic;">// Ignoramos la interrupciones</span>
+      <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>errno <span style="color: #339933;">=</span> EINTR<span style="color: #009900;">)</span>
+        <span style="color: #b1b100;">continue</span><span style="color: #339933;">;</span>
+      printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"select()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+     <span style="color: #009900;">}</span>
+     <span style="color: #666666; font-style: italic;">// Si hay conexiones esperando, las aceptamos </span>
+     <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval<span style="color: #009900;">)</span>
+     <span style="color: #009900;">{</span>  
+      retval <span style="color: #339933;">=</span> <span style="color: #993333;">sizeof</span><span style="color: #009900;">(</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+      cliente <span style="color: #339933;">=</span> accept<span style="color: #009900;">(</span>servidor<span style="color: #339933;">,</span> <span style="color: #009900;">(</span><span style="color: #993333;">struct</span> sockaddr <span style="color: #339933;">*</span><span style="color: #009900;">)</span> <span style="color: #339933;">&amp;</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/sin.html"><span style="color: #000066;">sin</span></a><span style="color: #339933;">,</span> <span style="color: #339933;">&amp;</span>retval<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>cliente <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+      <span style="color: #009900;">{</span>
+       <span style="color: #666666; font-style: italic;">// Creamos un proceso "hijo" - fork()</span>
+       retval <span style="color: #339933;">=</span> fork<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+       <span style="color: #009900;">{</span>
+        printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"fork()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+        <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+       <span style="color: #009900;">}</span>
+       <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>retval <span style="color: #339933;">==</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">)</span>
+       <span style="color: #009900;">{</span>  
+        <span style="color: #666666; font-style: italic;">// Estamos dentro del proceso hijo</span>
+        close<span style="color: #009900;">(</span>servidor<span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+        <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dup2<span style="color: #009900;">(</span>cliente<span style="color: #339933;">,</span>STDOUT_FILENO<span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>
+ 	  <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>dup2<span style="color: #009900;">(</span>cliente<span style="color: #339933;">,</span>STDIN_FILENO<span style="color: #009900;">)</span> <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span>               
+            conexion<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"dup2()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+        <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"dup2()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>          
+        close<span style="color: #009900;">(</span>cliente<span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+        <span style="color: #666666; font-style: italic;">// Aqui termina el proceso hijo       </span>
+        <a href="http://www.opengroup.org/onlinepubs/009695399/functions/exit.html"><span style="color: #000066;">exit</span></a><span style="color: #009900;">(</span><span style="color: #0000dd;">0</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>               
+       <span style="color: #009900;">}</span>
+       close<span style="color: #009900;">(</span>cliente<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"accept()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+     <span style="color: #009900;">}</span>
+    <span style="color: #009900;">}</span>
+   <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"listen()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"bind()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  <span style="color: #666666; font-style: italic;">// Cerramos el socket</span>
+  close<span style="color: #009900;">(</span>servidor<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span> <span style="color: #b1b100;">else</span> printerror<span style="color: #009900;">(</span><span style="color: #ff0000;">"socket()"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #993333;">void</span> printhelp<span style="color: #009900;">(</span><span style="color: #993333;">int</span> exitcode<span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"Uso: pico [opciones]<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"  -b --buffer<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"    Tamaño en Kb del buffer [8..32]<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"  -h --help<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"    Muestra este mensaje de ayuda.<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"  -i --inetd<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"    Permite ejecutar el servidor usando xinetd.<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"  -p --puerto<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"    Numero del puerto del servidor [1..65535]<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"  -t --timeout<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"    Tiempo de espera antes de cerrar la conexion, en segundos [5..300]<span style="color: #000099; font-weight: bold;">\n</span><span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <a href="http://www.opengroup.org/onlinepubs/009695399/functions/exit.html"><span style="color: #000066;">exit</span></a><span style="color: #009900;">(</span>exitcode<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span>
+ 
+<span style="color: #993333;">int</span> main<span style="color: #009900;">(</span><span style="color: #993333;">int</span> argc<span style="color: #339933;">,</span> <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>argv<span style="color: #009900;">[</span><span style="color: #009900;">]</span><span style="color: #009900;">)</span>
+<span style="color: #009900;">{</span>
+ <span style="color: #993333;">int</span> i<span style="color: #339933;">;</span>
+ <span style="color: #993333;">int</span> nextopt<span style="color: #339933;">;</span>
+ <span style="color: #993333;">char</span> <span style="color: #339933;">*</span>str<span style="color: #339933;">;</span> 
+ 
+ <span style="color: #993333;">const</span> <span style="color: #993333;">struct</span> option options<span style="color: #009900;">[</span><span style="color: #009900;">]</span> <span style="color: #339933;">=</span>
+ <span style="color: #009900;">{</span>
+  <span style="color: #009900;">{</span><span style="color: #ff0000;">"buffer"</span><span style="color: #339933;">,</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">'b'</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+  <span style="color: #009900;">{</span><span style="color: #ff0000;">"help"</span><span style="color: #339933;">,</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">'h'</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+  <span style="color: #009900;">{</span><span style="color: #ff0000;">"inetd"</span><span style="color: #339933;">,</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">'i'</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+  <span style="color: #009900;">{</span><span style="color: #ff0000;">"puerto"</span><span style="color: #339933;">,</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">'p'</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+  <span style="color: #009900;">{</span><span style="color: #ff0000;">"timeout"</span><span style="color: #339933;">,</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #ff0000;">'t'</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+  <span style="color: #009900;">{</span>NULL<span style="color: #339933;">,</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">,</span> NULL<span style="color: #339933;">,</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">}</span>
+ <span style="color: #009900;">}</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">do</span> <span style="color: #009900;">{</span>
+   nextopt <span style="color: #339933;">=</span> getopt_long<span style="color: #009900;">(</span>argc<span style="color: #339933;">,</span>argv<span style="color: #339933;">,</span><span style="color: #ff0000;">"b:hip:t:"</span><span style="color: #339933;">,</span>options<span style="color: #339933;">,</span>NULL<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+   <span style="color: #b1b100;">switch</span> <span style="color: #009900;">(</span>nextopt<span style="color: #009900;">)</span>
+   <span style="color: #009900;">{</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'b'</span><span style="color: #339933;">:</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'p'</span><span style="color: #339933;">:</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'t'</span><span style="color: #339933;">:</span>
+      i <span style="color: #339933;">=</span> <a href="http://www.opengroup.org/onlinepubs/009695399/functions/strtol.html"><span style="color: #000066;">strtol</span></a><span style="color: #009900;">(</span>optarg<span style="color: #339933;">,&amp;</span>str<span style="color: #339933;">,</span><span style="color: #0000dd;">10</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #339933;">*</span>str <span style="color: #339933;">!=</span> <span style="color: #ff0000;">'<span style="color: #006699; font-weight: bold;">\0</span>'</span><span style="color: #009900;">)</span>
+      <span style="color: #009900;">{</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"Parametro incorrecto: %s<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span>optarg<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+       printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #009900;">}</span>  
+      <span style="color: #b1b100;">switch</span> <span style="color: #009900;">(</span>nextopt<span style="color: #009900;">)</span>
+      <span style="color: #009900;">{</span>
+       <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'b'</span><span style="color: #339933;">:</span>
+         <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>i <span style="color: #339933;">&lt;</span> <span style="color: #0000dd;">8</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span> <span style="color: #009900;">(</span>i <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">32</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+         <span style="color: #009900;">{</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"El tamaño del buffer es incorrecto.<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+         <span style="color: #009900;">}</span>
+         buffersize <span style="color: #339933;">=</span> <span style="color: #0000dd;">1024</span><span style="color: #339933;">*</span>i<span style="color: #339933;">;</span>
+         <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>  
+       <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'p'</span><span style="color: #339933;">:</span>
+         <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>i <span style="color: #339933;">&lt;</span> <span style="color: #0000dd;">1</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span> <span style="color: #009900;">(</span>i <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">65535</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+         <span style="color: #009900;">{</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"El numero del puerto es incorrecto.<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+         <span style="color: #009900;">}</span>
+         puerto <span style="color: #339933;">=</span> i<span style="color: #339933;">;</span>
+         <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>  
+       <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'t'</span><span style="color: #339933;">:</span>
+         <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span><span style="color: #009900;">(</span>i <span style="color: #339933;">&lt;</span> <span style="color: #0000dd;">5</span><span style="color: #009900;">)</span> <span style="color: #339933;">||</span> <span style="color: #009900;">(</span>i <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">5</span><span style="color: #339933;">*</span><span style="color: #0000dd;">60</span><span style="color: #009900;">)</span><span style="color: #009900;">)</span>
+         <span style="color: #009900;">{</span>
+          <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"El timeout es incorrecto.<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+          printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>          
+         <span style="color: #009900;">}</span>
+         timeout <span style="color: #339933;">=</span> i<span style="color: #339933;">;</span>
+         <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>         
+      <span style="color: #009900;">}</span>    
+      <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'h'</span><span style="color: #339933;">:</span>
+      printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">0</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'i'</span><span style="color: #339933;">:</span>
+      inetd <span style="color: #339933;">=</span> <span style="color: #0000dd;">1</span><span style="color: #339933;">;</span>
+      <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">case</span> <span style="color: #ff0000;">'?'</span><span style="color: #339933;">:</span>
+      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"Parametro no valido<span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      printhelp<span style="color: #009900;">(</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+      <span style="color: #000000; font-weight: bold;">break</span><span style="color: #339933;">;</span>
+   <span style="color: #009900;">}</span>
+ <span style="color: #009900;">}</span> <span style="color: #b1b100;">while</span> <span style="color: #009900;">(</span>nextopt <span style="color: #339933;">!=</span> <span style="color: #339933;">-</span><span style="color: #0000dd;">1</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span> 
+ <span style="color: #b1b100;">if</span> <span style="color: #009900;">(</span>inetd<span style="color: #009900;">)</span>
+   conexion<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #b1b100;">else</span>
+ <span style="color: #009900;">{</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/fprintf.html"><span style="color: #000066;">fprintf</span></a><span style="color: #009900;">(</span>stderr<span style="color: #339933;">,</span><span style="color: #ff0000;">"Pid: %d Puerto: %d Buffer: %d Bytes Timeout: %d sg<span style="color: #000099; font-weight: bold;">\n</span><span style="color: #000099; font-weight: bold;">\n</span>"</span><span style="color: #339933;">,</span>
+   <span style="color: #009900;">(</span><span style="color: #993333;">int</span><span style="color: #009900;">)</span> getpid<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">,</span>puerto<span style="color: #339933;">,</span>buffersize<span style="color: #339933;">,</span>timeout<span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+  servidor<span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+ <span style="color: #009900;">}</span>
+ <span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">}</span></pre></div>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    </article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

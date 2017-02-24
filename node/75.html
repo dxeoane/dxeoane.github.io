@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/75" />
+<link rel="canonical" href="/node/75" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Vacunar disco (FAT32) contra un &quot;AUTORUN.INF&quot; malicioso | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"sRNuI-D4XzN3CXU96toXUHdk5SrovOOvqhPYBkwRE0Y","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-75 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Vacunar disco (FAT32) contra un &quot;AUTORUN.INF&quot; malicioso</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-75" class="node node-article node-promoted clearfix" about="/node/75" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Vacunar disco (FAT32) contra un &quot;AUTORUN.INF&quot; malicioso" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="2" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2012-04-29T04:46:42+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 04/29/2012 - 04:46</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Últimamente se ha puesto de moda entre el "malware" utilizar discos extraíbles (memorias usb, cámaras de fotos, reproductores de mp3, etc ...)  para propagarse de un ordenador a otro. Para conseguirlo crean en el directorio raíz del disco un archivo "AUTORUN.INF"  que permite ejecutar el software malicioso cada vez que el disco es conectado a un ordenador. La pequeña aplicación que muestro a continuación permite "vacunar" este archivo de tal forma que resulte mucho más difícil (aunque no imposible) modificarlo, impidiendo de este modo que nuestro disco sea infectado cuando lo usemos en otros ordenadores.</p>
+<!--break--><p>
+</p><center><b>ANTES DE CONTINUAR, RECUERDA QUE ESTA APLICACIÓN ES SOLO UN EJEMPLO. NO DEBE UTILIZARSE EN DISCOS QUE CONTENGAN DATOS IMPORTANTES, Y EN NINGÚN CASO ME HARÉ RESPONSABLE DE LOS POSIBLES DAÑOS QUE PUEDA SUFRIR EL DISCO O LOS DATOS CONTENIDOS EN EL.</b></center>
+<p></p><center><b>USA ESTE PROGRAMA CON PRECAUCIÓN Y BAJO TU PROPIA RESPONSABILIDAD.</b></center> 
+<p>Para vacunar nuestro disco lo primero que tenemos que hacer es crear en el directorio raíz del disco un fichero llamado "AUTORUN.INF" (el archivo puede estar vacío)</p>
+<p><img src="/sites/delphi.jmrds.com/imagenes/Stories/vacunar_usb_01.png" /></p>
+<p>Luego ejecutamos la aplicación como administradores, asegurándonos antes de que ningún programa esta usando el disco.</p>
+<p><img src="/sites/delphi.jmrds.com/imagenes/Stories/vacunar_usb_02.png" /></p>
+<p>Despues de aceptar la clausula de exclusión de responsabilidad, se nos mostrará una pantalla como esta:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">[0] Salir
+[1] \\.\C:
+[2] \\.\D:
+[3] \\.\E:
+[4] \\.\F:
+[5] \\.\G:
+Escoge:</pre></div>
+<p>Escogemos el número que corresponde a la unidad que queremos vacunar y pulsamos [Enter]. </p>
+<p>Se mostrará entonces una serie de información referente  al disco, y si todo va bien, al final aparecerá el siguiente mensaje:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">AUTORUN.INF encontrado
+Activando vacuna ...
+Proceso terminado</pre></div>
+<p>Ahora el fichero "AUTORUN.INF" que habíamos creado previamente, aparece oculto y "marcado" de tal manera que es inaccesible para cualquier programa.</p>
+<p><img src="/sites/delphi.jmrds.com/imagenes/Stories/vacunar_usb_03.png" /></p>
+<p>No lo podremos ni abrir, ni modificar, ni siquiera borrarlo impidiendo de esta manera que ningún software malicioso lo reemplace por uno infectado. La única manera de eliminarlo es quitando la vacuna con este mismo programa, o formateando el disco. Aunque como ya dije mas arriba el método no es infalible, los fabricantes de malware también conocen esta técnica y podrían desmarcar el fichero para luego eliminarlo, pero la verdad es que la mayoría no se molestan en hacerlo, ademas como se necesitan permisos de administrador llamarían mucho la atención. La realidad es que algunas marcas de antivirus conocidas que también "vacunan" discos extraibles usan esta técnica, y si a ellos les parece segura, a mi también.</p>
+<p>Para quitar la vacuna solo hay que volver a repetir los pasos anteriores, pero en este caso, al estar el disco ya vacunado, se mostrará el siguiente mensaje:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">AUTORUN.INF encontrado
+Eliminando vacuna ...
+Proceso terminado</pre></div>
+<p>El código fuente y el programa ya compilado se pueden bajar de <a href="/sites/delphi.jmrds.com/adjuntos/VacunarUSB.zip">aquí</a> </p>
+<p></p><center><b>*** DESCRIPCIÓN DEL CÓDIGO FUENTE DEL PROGRAMA (SOLO PARA PROGRAMADORES) ***</b></center>
+<p>El código fuente es el siguiente (es una aplicación de consola)</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">unit</span> umain<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">interface</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span> Windows<span style="color: #000066;">,</span> Sysutils<span style="color: #000066;">,</span> Classes<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> main<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">implementation</span>
+ 
+<span style="color: #000000; font-weight: bold;">type</span>
+  PDWordArray <span style="color: #000066;">=</span> <span style="color: #000066;">^</span>TDWordArray<span style="color: #000066;">;</span>
+  TDWordArray <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">array</span><span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">..</span><span style="color: #0000cc;">$0FFFFFFF</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">of</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+ 
+  TPartition <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">record</span>
+    Stream<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+    PartBegin<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+    BytsPerSec<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span>
+    SecPerClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>
+    BytsPerClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span>
+    RsvdSecCnt<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span>
+    NumFATs<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>
+    FATSz32<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span>
+    ClusCount<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+    ClusBegin<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+    RootClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+    FAT<span style="color: #000066;">:</span> PDWordArray<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span> 
+ 
+<span style="color: #000000; font-weight: bold;">function</span> <span style="color: #000066;">Min</span><span style="color: #000066;">(</span>i<span style="color: #000066;">,</span>j<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">if</span> i &lt; j <span style="color: #000000; font-weight: bold;">then</span>
+    Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> i
+  <span style="color: #000000; font-weight: bold;">else</span>
+    Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> j<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Muestra el contenido del buffer en hexadecimal y como texto</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> WriteHex<span style="color: #000066;">(</span>Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">;</span>  Count<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">,</span>j<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  j<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">while</span> Count &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span>j<span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">':'</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#32</span><span style="color: #ff0000;">#32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #000066;">Min</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span> <span style="color: #000066;">-</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">#32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #000066;">Min</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span> <span style="color: #000066;">-</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Min</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #0000ff;">15</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">#32</span><span style="color: #ff0000;">#32</span><span style="color: #ff0000;">#32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">#32</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">'|'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #000066;">Min</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span> <span style="color: #000066;">-</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066; font-weight: bold;">Char</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000066;">[</span><span style="color: #ff0000;">'A'</span><span style="color: #000066;">..</span><span style="color: #ff0000;">'Z'</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'a'</span><span style="color: #000066;">..</span><span style="color: #ff0000;">'z'</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'0'</span><span style="color: #000066;">..</span><span style="color: #ff0000;">'9'</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span><span style="color: #000066;">)</span>
+    <span style="color: #000000; font-weight: bold;">else</span>
+      <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'.'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'|'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Dec</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>j<span style="color: #000066;">,</span><span style="color: #0000ff;">16</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Lee el primer sector de la particion</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> ReadBootSector<span style="color: #000066;">(</span><span style="color: #000000; font-weight: bold;">var</span> Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByteArray</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos memoria para guardar el sector de arranque</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span><span style="color: #0000cc;">$0200</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #000000; font-weight: bold;">with</span> Partition <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Leemos el sector de arranque</span>
+      Stream<span style="color: #000066;">.</span><span style="color: #006600;">ReadBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #0000cc;">$0200</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Volcamos en pantalla el contenido del sector de arranque</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'=== Boot Sector ==='</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      WriteHex<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">,</span> <span style="color: #0000cc;">$0200</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      Writeln<span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Comprobamos la firma del sector de arranque</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$01FE</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span> &lt;&gt; <span style="color: #0000cc;">$AA55</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">raise</span> Exception<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Invalid Boot Sector signature = '</span>
+          <span style="color: #000066;">+</span> <span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span><span style="color: #000066;">Swap</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$01FE</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Comprobamos que es FAT32</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0052</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span> &lt;&gt; <span style="color: #ff0000;">'FAT32'</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">raise</span> Exception<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Invalid System ID = '</span>
+          <span style="color: #000066;">+</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0052</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Mostramos la informacion de la particion por pantalla</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Signature:           '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span><span style="color: #000066;">Swap</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$01FE</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'System ID:           '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0052</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'OEM ID:              '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0003</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Volume label:        '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0047</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">11</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Volume serial:       '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PDWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0043</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      BytsPerSec<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$000B</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Bytes per sector:    '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>BytsPerSec<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      SecPerClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$000D</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Sectors per cluster: '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>SecPerClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      BytsPerClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> BytsPerSec <span style="color: #000066;">*</span> SecPerClus<span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Bytes per cluster:   '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>BytsPerClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      RsvdSecCnt<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$000E</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Reserved sectors:    '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>RsvdSecCnt<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      NumFATs<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0010</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Number of FATs:      '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>NumFATs<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      FATSz32<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$0024</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Sectors per FAT:     '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>FATSz32<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      ClusCount<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">(</span><span style="color: #000066;">(</span>FATSz32 <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">div</span> <span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Cluster count:       '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>ClusCount<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      ClusBegin<span style="color: #000066;">:</span><span style="color: #000066;">=</span> RsvdSecCnt <span style="color: #000066;">+</span> <span style="color: #000066;">(</span>NumFATs <span style="color: #000066;">*</span> FATSz32<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      RootClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">PDWORD</span><span style="color: #000066;">(</span><span style="color: #000066;">@</span>Buffer<span style="color: #000066;">[</span><span style="color: #0000cc;">$002C</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Root cluster:        '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>RootClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      Writeln<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #808080; font-style: italic;">// Liberamos la memoria</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Lee la FAT</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> ReadFAT<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span>
+  FreeClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">int64</span><span style="color: #000066;">;</span>
+  ResClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">int64</span><span style="color: #000066;">;</span>
+  BadClus<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">int64</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  FreeClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  ResClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  BadClus<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">with</span> Partition <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #808080; font-style: italic;">// Nos colocamos al principio de la FAT</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">(</span>PartBegin <span style="color: #000066;">+</span> RsvdSecCnt<span style="color: #000066;">)</span> <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// La cargamos en memoria</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">ReadBuffer</span><span style="color: #000066;">(</span>FAT<span style="color: #000066;">^</span><span style="color: #000066;">,</span> FATSz32 <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'=== Clusters ==='</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// La recorremos registro a registro</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">to</span> ClusCount <span style="color: #000066;">-</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// y contamos el estado de cada cluster</span>
+      <span style="color: #000000; font-weight: bold;">case</span> FAT<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">of</span>
+        <span style="color: #0000ff;">0</span><span style="color: #000066;">:</span> <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>FreeClus<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #0000cc;">$FFFFFF7</span><span style="color: #000066;">:</span> <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>BadClus<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">else</span>
+        <span style="color: #000066;">inc</span><span style="color: #000066;">(</span>ResClus<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Mostramos los contadores</span>
+    <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Free: '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>FreeClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Used: '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>ResClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Bad:  '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>BadClus<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Lee un cluster</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> ReadClus<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span> Cluster<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span> Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">with</span> Partition <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">(</span>PartBegin <span style="color: #000066;">+</span> ClusBegin <span style="color: #000066;">+</span> <span style="color: #000066;">(</span>Cluster <span style="color: #000066;">-</span> <span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000066;">*</span> SecPerClus<span style="color: #000066;">)</span>
+      <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">;</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">ReadBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span> BytsPerClus<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Escribe un cluster</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> WriteClus<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span> Cluster<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span> Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000000; font-weight: bold;">with</span> Partition <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">(</span>PartBegin <span style="color: #000066;">+</span> ClusBegin <span style="color: #000066;">+</span> <span style="color: #000066;">(</span>Cluster <span style="color: #000066;">-</span> <span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000066;">*</span> SecPerClus<span style="color: #000066;">)</span>
+      <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">;</span>
+    Stream<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span> BytsPerClus<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Lee los datos del directorio a partir de su primer cluster</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> ReadData<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span> Cluster<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span> Stream<span style="color: #000066;">:</span> TStream<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos memoria para guardar los datos de un cluster</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>Partition<span style="color: #000066;">.</span><span style="color: #006600;">SecPerClus</span> <span style="color: #000066;">*</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">BytsPerSec</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Mientras no se llegue al final del fichero</span>
+    <span style="color: #000000; font-weight: bold;">while</span> Cluster &lt; Partition<span style="color: #000066;">.</span><span style="color: #006600;">ClusCount</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Leemos el cluster</span>
+      ReadClus<span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span> Cluster<span style="color: #000066;">,</span> Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Lo grabamos en el stream</span>
+      Stream<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">SecPerClus</span> <span style="color: #000066;">*</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">BytsPerSec</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Buscamos en la FAT el siguiente cluster</span>
+      Cluster<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">FAT</span><span style="color: #000066;">[</span>Cluster<span style="color: #000066;">]</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Escribe los datos del directorio a partir de su primer cluster</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> WriteData<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span> Cluster<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">;</span> Stream<span style="color: #000066;">:</span> TStream<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos memoria para guardar los datos de un cluster</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>Partition<span style="color: #000066;">.</span><span style="color: #006600;">SecPerClus</span> <span style="color: #000066;">*</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">BytsPerSec</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Mientras no se llegue al final del fichero</span>
+    <span style="color: #000000; font-weight: bold;">while</span> Cluster &lt; Partition<span style="color: #000066;">.</span><span style="color: #006600;">ClusCount</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Leemos el cluster del stream</span>
+      Stream<span style="color: #000066;">.</span><span style="color: #006600;">ReadBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">SecPerClus</span> <span style="color: #000066;">*</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">BytsPerSec</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Escribimos el cluster en el disco</span>
+      WriteClus<span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span> Cluster<span style="color: #000066;">,</span> Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Buscamos en la FAT el siguiente cluster</span>
+      Cluster<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">FAT</span><span style="color: #000066;">[</span>Cluster<span style="color: #000066;">]</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Vacuna el archivo "AUTORUN.INF"</span>
+<span style="color: #000000; font-weight: bold;">function</span> Vacunar<span style="color: #000066;">(</span>Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span> Cluster<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">DWord</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Tmp<span style="color: #000066;">:</span> TMemoryStream<span style="color: #000066;">;</span>
+  Entry<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">;</span>
+  Name<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+  Attr<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un stream temporal</span>
+  Tmp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TMemoryStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos memoria para guardar cada entrada del directorio</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">,</span> <span style="color: #0000ff;">32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Leemos todas las entradas del directorio</span>
+    ReadData<span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span>Cluster<span style="color: #000066;">,</span>Tmp<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    Tmp<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Procesamos cada una de las entradas del directorio</span>
+    <span style="color: #000000; font-weight: bold;">while</span> Tmp<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">^</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">32</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">32</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Si el primer byte es cero, significa que es la ultima</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Entry<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">#0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        break<span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Si el primer bytes es alguno de estos, ignoramos la entrada</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Entry<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000066;">[</span><span style="color: #ff0000;">#$00</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#$05</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#$2E</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#$E5</span><span style="color: #000066;">]</span> <span style="color: #000000; font-weight: bold;">then</span>
+        continue<span style="color: #000066;">;</span>
+      Attr<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">[</span><span style="color: #0000cc;">$0B</span><span style="color: #000066;">]</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Ignoramos los nombres largos</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span>Attr <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$0F</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #0000cc;">$0F</span> <span style="color: #000000; font-weight: bold;">then</span>
+        continue<span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Obtenemos la extension</span>
+      Name<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">,</span><span style="color: #0000ff;">9</span><span style="color: #000066;">,</span><span style="color: #0000ff;">3</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Name &lt;&gt; EmptyStr <span style="color: #000000; font-weight: bold;">then</span>
+        Name<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'.'</span> <span style="color: #000066;">+</span> Name<span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// y se la sumamos al nombre</span>
+      Name<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> Name<span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Si encontramos el archivo "AUTORUN.INF" lo vacunamos</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Name<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">'AUTORUN.INF'</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'AUTORUN.INF encontrado'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Si no esta vacunado</span>
+        <span style="color: #000000; font-weight: bold;">if</span> Entry<span style="color: #000066;">[</span><span style="color: #0000cc;">$0B</span><span style="color: #000066;">]</span> &lt;&gt; <span style="color: #ff0000;">#$42</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #808080; font-style: italic;">// Lo vacunamos</span>
+          <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Activando vacuna ...'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          Entry<span style="color: #000066;">[</span><span style="color: #0000cc;">$0B</span><span style="color: #000066;">]</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">#$42</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #808080; font-style: italic;">// y si lo esta eliminamos la vacuna</span>
+          <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Eliminando vacuna ...'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          Entry<span style="color: #000066;">[</span><span style="color: #0000cc;">$0B</span><span style="color: #000066;">]</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">#0</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Cambiamos la entrada</span>
+        Tmp<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Tmp<span style="color: #000066;">.</span><span style="color: #006600;">Position</span> <span style="color: #000066;">-</span> <span style="color: #0000ff;">32</span><span style="color: #000066;">;</span>
+        Tmp<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #0000ff;">32</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        Tmp<span style="color: #000066;">.</span><span style="color: #006600;">Position</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Y volvemos a escribir los datos en el disco</span>
+        WriteData<span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span>Cluster<span style="color: #000066;">,</span>Tmp<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Proceso terminado'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        break<span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #808080; font-style: italic;">// Liberamos la memoria y el stream</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Entry<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    Tmp<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Esta es la funcion principal</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> main<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  C<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Char</span><span style="color: #000066;">;</span>
+  i<span style="color: #000066;">,</span> H<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  Str<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+  Stream<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+  Partition<span style="color: #000066;">:</span> TPartition<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Creado por Domingo Seoane - &lt;a href="http://delphi.jmrds.com'</span>"&gt;http<span style="color: #000066;">:</span><span style="color: #808080; font-style: italic;">//delphi.jmrds.com'&lt;/a&gt;);</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'ANTES DE CONTINUAR, RECUERDA QUE ESTE PROGRAMA ES SOLO UN EJEMPLO:'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--&gt; NO DEBE UTILIZARSE EN DISCOS QUE CONTENGAN DATOS IMPORTANTES.'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--&gt; EN NINGUN CASO ME HARE RESPONSABLE DE LOS DA'</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#165</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">'OS QUE PUEDA SUFRIR EL DISCO.'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--&gt; TAMPOCO DE LOS DA'</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#165</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">'OS QUE PUEDAN SUFRIR LOS DATOS CONTENIDOS EN EL.'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--&gt; USA ESTE PROGRAMA CON PRECAUCION Y BAJO TU PROPIA RESPONSABILIDAD.'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000000; font-weight: bold;">TRUE</span>  <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'ERES CONSCIENTE DEL RIESGO Y QUIERES CONTINUAR? (S/N)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000066;">Readln</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">'S'</span> <span style="color: #000000; font-weight: bold;">then</span>
+      break<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">Uppercase</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">'N'</span> <span style="color: #000000; font-weight: bold;">then</span>
+      halt<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Creamos la lista de opciones</span>
+    <span style="color: #000000; font-weight: bold;">with</span> TStringList<span style="color: #000066;">.</span><span style="color: #006600;">Create</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      Add<span style="color: #000066;">(</span>EmptyStr<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'['</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">'] Salir'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Buscamos todas las unidades</span>
+      <span style="color: #000000; font-weight: bold;">for</span> C<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'A'</span> <span style="color: #000000; font-weight: bold;">to</span> <span style="color: #ff0000;">'Z'</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        Str<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'\\.\'</span> <span style="color: #000066;">+</span> C <span style="color: #000066;">+</span> <span style="color: #ff0000;">':'</span><span style="color: #000066;">;</span>
+        H<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">FileOpen</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">,</span>fmOpenRead <span style="color: #000000; font-weight: bold;">or</span> fmShareDenyNone<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Si se puede abrir lo añadimos a la lista</span>
+        <span style="color: #000000; font-weight: bold;">if</span> H &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          CloseHandle<span style="color: #000066;">(</span>H<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          Add<span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'['</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>Count<span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">'] '</span> <span style="color: #000066;">+</span> Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      Writeln<span style="color: #000066;">;</span>
+      i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">while</span> i &lt; <span style="color: #0000ff;">0</span>  <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        <span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Escoge: '</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">Readln</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">StrToIntDef</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      Writeln<span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> i &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        Stream<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Strings<span style="color: #000066;">[</span>i<span style="color: #000066;">]</span><span style="color: #000066;">,</span>fmOpenReadWrite <span style="color: #000000; font-weight: bold;">or</span> fmShareExclusive<span style="color: #000066;">)</span>
+      <span style="color: #000000; font-weight: bold;">else</span>
+        Exit<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      Free<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Stream <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">nil</span> <span style="color: #000000; font-weight: bold;">then</span>
+      Halt<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      <span style="color: #808080; font-style: italic;">// Borramos todas las variables</span>
+      <span style="color: #000066;">Fillchar</span><span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span><span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>Partition<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      Partition<span style="color: #000066;">.</span><span style="color: #006600;">Stream</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Stream<span style="color: #000066;">;</span> 
+      <span style="color: #808080; font-style: italic;">// Leemos el sector de arranque de la particion</span>
+      ReadBootSector<span style="color: #000066;">(</span>Partition<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Reservamos espacio en memoria para la FAT</span>
+      <span style="color: #000000; font-weight: bold;">with</span> Partition <span style="color: #000000; font-weight: bold;">do</span>
+        <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>FAT<span style="color: #000066;">,</span>FATSz32 <span style="color: #000066;">*</span> BytsPerSec<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        <span style="color: #808080; font-style: italic;">// Leemos la FAT y la guardamos en memoria</span>
+        ReadFAT<span style="color: #000066;">(</span>Partition<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Creamos o eliminamos la vacuna</span>
+        <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000000; font-weight: bold;">not</span> Vacunar<span style="color: #000066;">(</span>Partition<span style="color: #000066;">,</span> Partition<span style="color: #000066;">.</span><span style="color: #006600;">RootClus</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'No puedo encontrar el fichero "AUTORUN.INF"'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        <span style="color: #808080; font-style: italic;">// Liberamos la memoria reservada para la FAT</span>
+        <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Partition<span style="color: #000066;">.</span><span style="color: #006600;">FAT</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      <span style="color: #808080; font-style: italic;">// Liberamos el stream</span>
+      Stream<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">except</span>
+    <span style="color: #808080; font-style: italic;">// Si ocurre un error</span>
+    <span style="color: #000000; font-weight: bold;">On</span> E<span style="color: #000066;">:</span> Exception <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Lo mostramos</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Exception: '</span> <span style="color: #000066;">+</span> E<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Message</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'LastError: '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">SysErrorMessage</span><span style="color: #000066;">(</span>GetLastError<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'ParamStr(1): '</span> <span style="color: #000066;">+</span> <span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Pulsa [ENTER] para cerrar el programa ...'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Readln<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>En el código se puede ver como el programa accede directamente a los datos de la partición, busca el fichero "autorun.inf" y lo marca con un flag especial que lo vuelve "intocable".</p>
+<p>Para saber mas revisa estos enlaces con documentación sobre la FAT32:<br /><a href="http://www.pjrc.com/tech/8051/ide/fat32.html">http://www.pjrc.com/tech/8051/ide/fat32.html</a><br /><a href="http://en.wikipedia.org/wiki/File_Allocation_Table">http://en.wikipedia.org/wiki/File_Allocation_Table</a><br /><a href="http://en.wikipedia.org/wiki/Master_boot_record">http://en.wikipedia.org/wiki/Master_boot_record</a><br /><a href="http://technet.microsoft.com/en-us/library/cc977221.aspx">http://technet.microsoft.com/en-us/library/cc977221.aspx</a><br /><a href="http://delphi.jmrds.com/?q=node/74">http://delphi.jmrds.com/?q=node/74</a></p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-941"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/941#comment-941" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/941#comment-941" class="permalink" rel="bookmark">Estimado Seoane:</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/941#comment-941" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-06-21T14:11:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Antonio (no verificado)</span> el Jue, 06/21/2012 - 14:11</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/75" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Estimado Seoane:<br />
+Existe un truco más simple y yo diría que más &quot;perfeccionado&quot;.<br />
+El truco no es nada más que crear una simple carpeta llamada autorun.inf en el raiz.<br />
+No hace falta ocultarla ni cambiarle los permisos, aunque también se puede hacer.<br />
+No se puede crear o sobreescribir un archivo autorun.inf porque la carpeta lo evita, y borrar una carpeta (para un programa/virus) es más &quot;complejo&quot; que un archivo por lo que no lo suelen poder hacer.<br />
+A mi me ha funcionado muy bien durante años.<br />
+Un saludo.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-942"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/942#comment-942" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/942#comment-942" class="permalink" rel="bookmark">Borrar una carpeta no es nada</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/942#comment-942" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-06-21T16:31:59+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Jue, 06/21/2012 - 16:31</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/75" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/941#comment-941" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Borrar una carpeta no es nada complicado, es algo trivial, aunque no dudo de que habrá muchos virus que ni se molesten. Todo depende de lo difícil que se lo quieras poner, si a ti te llega con crear una carpeta estupendo.</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div>
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

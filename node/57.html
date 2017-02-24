@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/57" />
+<link rel="canonical" href="/node/57" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Crear un archivo autoextraible con Delphi | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"kGD44JMyQqh7d3TjAspc6gucKRv_OOBLNw00svfKu4U","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-57 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Crear un archivo autoextraible con Delphi</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-57" class="node node-article node-promoted clearfix" about="/node/57" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Crear un archivo autoextraible con Delphi" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="7" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2010-05-05T14:17:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mié, 05/05/2010 - 14:17</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Este es un ejemplo, muy sencillo, de como crear un fichero autoextraible. Este pequeño programa funciona de una manera muy simple, si se le pasa como parámetro un archivo, crea una copia de si mismo donde se incrusta una copia comprimida del archivo que se le paso como parámetro. Y si por el contrario, el programa detecta que tiene un fichero incrustado lo extrae.</p>
+<!--break--><p>El ejemplo es intencionadamente simple, por ese motivo las rutas donde se guardan los ficheros las calcula internamente el programa en vez de mostrar un dialogo "Guardar como ...", que seria lo mas correcto. En caso de utilizar el código en una aplicación "real", no sería muy complicado añadir estos diálogos, aunque sería conveniente reducir al mínimo el uso de estos para no incrementar demasiado el tamaño del ejecutable, que en este caso si es importante.</p>
+<p>La compresión se realiza usando zlib, que viene incluido con delphi, así que no necesitamos ningún componente de terceros, ni dlls, ni nada que engorde el ejecutable o haga más difícil su distribución.</p>
+<p>El código es el siguiente (es una aplicación sin formularios):</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">program</span> SimpleSFX<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span>
+  Windows<span style="color: #000066;">,</span>
+  SysUtils<span style="color: #000066;">,</span>
+  Classes<span style="color: #000066;">,</span>
+  ZLib<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">const</span>
+  strUID <span style="color: #000066;">=</span> <span style="color: #ff0000;">'{EE6068A1-487C-4ED0-9DCA-9DCB0E6B35CB}'</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Esta funcion comprueba si existe un recurso con el nombre strUID</span>
+<span style="color: #000000; font-weight: bold;">function</span> CheckRes<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  hRes<span style="color: #000066;">:</span> HRSRC<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">;</span>
+  hRes<span style="color: #000066;">:</span><span style="color: #000066;">=</span> FindResource<span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> strUID<span style="color: #000066;">,</span> RT_RCDATA<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> hRes &lt;&gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">// Crea una copia del ejecutable con el archivo incrustado</span>
+<span style="color: #000000; font-weight: bold;">procedure</span> CrearSFX<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Src<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+  Temp<span style="color: #000066;">:</span> TMemoryStream<span style="color: #000066;">;</span>
+  Path<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+  hUpdateRes<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">THANDLE</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Abrimos el fichero de origen como "solo lectura"</span>
+  Src<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span>fmOpenRead<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    Temp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TMemoryStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      <span style="color: #808080; font-style: italic;">// Comprimimos el fichero</span>
+      <span style="color: #000000; font-weight: bold;">with</span> TCompressionStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>clMax<span style="color: #000066;">,</span>Temp<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        CopyFrom<span style="color: #000066;">(</span>Src<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        Free<span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// La ruta del nuevo fichero es la misma que el fichero de origen + .exe</span>
+      Path<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">+</span><span style="color: #ff0000;">'.exe'</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> CopyFile<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span>Path<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        hUpdateRes<span style="color: #000066;">:</span><span style="color: #000066;">=</span> BeginUpdateResource<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span>Path<span style="color: #000066;">)</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">if</span> hUpdateRes &lt;&gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">if</span> UpdateResource<span style="color: #000066;">(</span>hUpdateRes<span style="color: #000066;">,</span> RT_RCDATA<span style="color: #000066;">,</span>strUID<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>Temp<span style="color: #000066;">.</span><span style="color: #006600;">Memory</span><span style="color: #000066;">,</span>Temp<span style="color: #000066;">.</span><span style="color: #006600;">Size</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #808080; font-style: italic;">// Guardamos el fichero como un recurso</span>
+            <span style="color: #000000; font-weight: bold;">if</span> EndUpdateResource<span style="color: #000066;">(</span>hUpdateRes<span style="color: #000066;">,</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+              Exit<span style="color: #000066;">;</span>
+        <span style="color: #000066;">DeleteFile</span><span style="color: #000066;">(</span>Path<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      Temp<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    Src<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">const</span>
+  BUFFERSIZE <span style="color: #000066;">=</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">*</span><span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> Extraer<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  Src<span style="color: #000066;">:</span> TResourceStream<span style="color: #000066;">;</span>
+  Dst<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+  Path<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PByte</span><span style="color: #000066;">;</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Abrimos el recurso donde esta guardado el fichero</span>
+  Src<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TResourceStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>strUID<span style="color: #000066;">,</span>RT_RCDATA<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// El fichero se extrae en la mima ruta que el ejecutable - .exe</span>
+    Path<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">ChangeFileExt</span><span style="color: #000066;">(</span><span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span>EmptyStr<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Path &lt;&gt; <span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      Dst<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Path<span style="color: #000066;">,</span>fmCreate<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        <span style="color: #808080; font-style: italic;">// Descomprimimos el fichero</span>
+        <span style="color: #000000; font-weight: bold;">with</span> TDeCompressionStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Src<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">do</span>
+        <span style="color: #000000; font-weight: bold;">try</span>
+          <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">try</span>
+            i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">while</span> i &gt; <span style="color: #0000ff;">0</span>  <span style="color: #000000; font-weight: bold;">do</span>
+            <span style="color: #000000; font-weight: bold;">begin</span>
+              Dst<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Write</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+              i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFERSIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">finally</span>
+            <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">finally</span>
+          Free<span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        Dst<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    Src<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Comprobamos si tenemos algun archivo incrustado</span>
+  <span style="color: #000000; font-weight: bold;">if</span> CheckRes <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #808080; font-style: italic;">// Si lo tenemos lo extraemos</span>
+    Extraer<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+    <span style="color: #808080; font-style: italic;">// Si no lo tenemos y nos pasan uno como parametro, lo incrustamos</span>
+    <span style="color: #000000; font-weight: bold;">if</span> ParamCount <span style="color: #000066;">=</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">then</span>
+      CrearSFX<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>El código se puede bajar de <a href="/sites/delphi.jmrds.com/adjuntos/SimpleSFX_delphi.zip">aquí</a></p>
+<p>Para usarlo simplemente arrastra un fichero sobre el ejecutable y automáticamente se creara un fichero .exe al lado del fichero original. También puedes pasarle el fichero como parámetro,  por ejemplo "SimpleSFX archivo.txt"</p>
+<p>Enlaces de interés:<br /><a href="http://www.zlib.net/">http://www.zlib.net/</a></p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-281"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/281#comment-281" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/281#comment-281" class="permalink" rel="bookmark">Como siempre, muy interesante</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/281#comment-281" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-05-05T16:56:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://neftali.clubdelphi.com/" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Neftalí -Germán... (no verificado)</a> el Mié, 05/05/2010 - 16:56</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Como siempre, muy interesante tu entrada.</p>
+<p>Gracias Domingo.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-282"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/282#comment-282" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/282#comment-282" class="permalink" rel="bookmark">Desconocía que existía de</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/282#comment-282" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-05-05T22:36:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonimo (no verificado)</span> el Mié, 05/05/2010 - 22:36</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Desconocía que existía de fábrica un componente de compresión en Delphi.</p>
+<p>Muchas gracias, fenomenal post.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-283"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/283#comment-283" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/283#comment-283" class="permalink" rel="bookmark">Muy bueno :-)</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/283#comment-283" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-05-06T02:34:59+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Nico Aragón (no verificado)</span> el Jue, 05/06/2010 - 02:34</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Muy bueno :-)</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-287"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/287#comment-287" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/287#comment-287" class="permalink" rel="bookmark">Como siempre amigo, muy</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/287#comment-287" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-05-14T20:58:38+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://www.delphiaccess.com" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Eliseo GN (no verificado)</a> el Vie, 05/14/2010 - 20:58</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Como siempre amigo, muy interesante el código que publicas y sobre todo con mucha aplicación.</p>
+<p>Saludos</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-341"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/341#comment-341" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/341#comment-341" class="permalink" rel="bookmark">¡Hijo de ****! ¡Desde que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/341#comment-341" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2010-06-22T18:48:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Lord Delfos (no verificado)</span> el Mar, 06/22/2010 - 18:48</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>¡Hijo de ****! ¡Desde que tengo memoria que quería saber cómo se hacía!</p>
+<p>Un grande, Seoane, sos un grande.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-958"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/958#comment-958" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/958#comment-958" class="permalink" rel="bookmark">Hola Seoane,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/958#comment-958" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-09-11T12:48:30+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">virtualp (no verificado)</span> el Mar, 09/11/2012 - 12:48</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola Seoane,<br />
+me ha parecido genial, muy bueno.<br />
+Tengo una duda respecto al strUID, ¿cómo lo has calculado?</p>
+<p>Saludos y gracias</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-960"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/960#comment-960" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/960#comment-960" class="permalink" rel="bookmark">Es un número aleatorio  que</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/960#comment-960" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-09-11T14:04:24+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Mar, 09/11/2012 - 14:04</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/57" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/958#comment-958" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Es un número aleatorio  que utilizo como "identificador único", cualquier otro nombre "único" hubiese servido también. Para generarlo simplemente pulsa en el editor de delphi Ctrl+Mayus+G y se insertara un nuevo número en el texto de forma automática.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div>
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/45" />
+<link rel="canonical" href="/node/45" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Dump, una pequeña herramienta | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"iLGWMBj1GmdTUOwQdGVrBZKDJz02Qs2Nf-IrRfp5nmg","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-45 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Dump, una pequeña herramienta</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-45" class="node node-article node-promoted clearfix" about="/node/45" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Dump, una pequeña herramienta" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="7" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2007-12-16T19:40:04+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 12/16/2007 - 19:40</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Esta es una pequeña herramienta que permite copiar un archivo en otro. Ya se que, a simple vista, no parece tener mucha utilidad, pero la verdad es que sabiéndola usar nos permitirá hacer algunas cosas muy interesantes.</p>
+<!--break--><p>El codigo (es una aplicion de consola):</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">program</span> dump<span style="color: #000066;">;</span>
+ 
+<span style="color: #008000; font-style: italic;">{$APPTYPE CONSOLE}</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span>
+  SysUtils<span style="color: #000066;">,</span>
+  Classes<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">type</span>
+  EGetOptError <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">class</span><span style="color: #000066;">(</span>Exception<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">var</span>
+  Options<span style="color: #000066;">:</span> <span style="color: #000000; font-weight: bold;">record</span>
+    BlockSize<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+    Count<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+    InputFile<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+    InputMode<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+    Mult<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+    OutputFile<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+    OutputMode<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> WriteHelp<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Uso: dump [opciones]'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --bs'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Numero de bytes que componen un bloque'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --count'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Numero de bloques a copiar'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --if'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Ruta del archivo de entrada'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --of'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Ruta del archivo de salida'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --im'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Modo de apertura del archivo de entrada'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --om'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Modo de apertura del archivo de salida'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  --x'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Factor por el que multiplicar --bs (1=Kb, 2=Mb, 3=Gb)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Posibles valores para "--im" y "--om":'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  01	Crea un archivo nuevo (Create)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  02	Abre el archivo solo para lectura (OpenRead)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  04	Abre el archivo solo para escritura (OpenWrite)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  08	Abre el archivo para su modificacion (OpenReadWrite)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Se pueden combinar con los siguientes valores:'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  16	Otras aplicaciones pueden leer y escribir el archivo (ShareDenyNone)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  32	Otras apliaciones pueden leer el archivo (ShareDenyWrite)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  64	No permite que otras aplicaciones abran el archivo (ShareExclusive)'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'El valor por defecto para "--im" es 18, y para "--om" es 1'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Ejemplo:'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'  dump --if=\\.\F: --of=imagen.bin --bs=4096'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'    Guarda una imagen del disco F en el archivo "imagen.bin"'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Writeln<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">function</span> Starts<span style="color: #000066;">(</span>Sub<span style="color: #000066;">,</span> Str<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">)</span><span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Result<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">SameText</span><span style="color: #000066;">(</span>Sub<span style="color: #000066;">,</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>sub<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> Getopt<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  Str<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">String</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>Options<span style="color: #000066;">,</span><span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>Options<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #ff0000;">#0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> ParamCount &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">for</span> i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">to</span> ParamCount <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      Str<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">ParamStr</span><span style="color: #000066;">(</span>i<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">'--'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span> &gt; <span style="color: #0000ff;">2</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--if='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputFile</span> <span style="color: #000066;">=</span> EmptyStr <span style="color: #000000; font-weight: bold;">then</span>
+            Options<span style="color: #000066;">.</span><span style="color: #006600;">InputFile</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--if='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span>
+          <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--of='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputFile</span> <span style="color: #000066;">=</span> EmptyStr <span style="color: #000000; font-weight: bold;">then</span>
+            Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputFile</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--of='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span>
+          <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--bs='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--bs='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span>
+          <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--count='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> <span style="color: #000066;">=</span> <span style="color: #000066;">-</span><span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--count='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span>
+          <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--im='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">case</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--im='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$0F</span> <span style="color: #000000; font-weight: bold;">of</span>
+              <span style="color: #0000ff;">1</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmCreate<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">2</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenRead<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">4</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenWrite<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">8</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenReadWrite<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">else</span>
+              <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">case</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--im='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$F0</span> <span style="color: #000000; font-weight: bold;">of</span>
+              <span style="color: #0000ff;">0</span><span style="color: #000066;">:</span> <span style="color: #000066;">;</span> 
+              <span style="color: #0000ff;">16</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span> <span style="color: #000066;">+</span> fmShareDenyNone<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">32</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span> <span style="color: #000066;">+</span> fmShareDenyWrite<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">64</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span> <span style="color: #000066;">+</span> fmShareExclusive<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">else</span>
+              <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--om='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">case</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--om='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$0F</span> <span style="color: #000000; font-weight: bold;">of</span>
+              <span style="color: #0000ff;">1</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmCreate<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">2</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenRead<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">4</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenWrite<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">8</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenReadWrite<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">else</span>
+              <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">case</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--om='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #0000cc;">$F0</span> <span style="color: #000000; font-weight: bold;">of</span>
+              <span style="color: #0000ff;">0</span><span style="color: #000066;">:</span> <span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">16</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span> <span style="color: #000066;">+</span> fmShareDenyNone<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">32</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span> <span style="color: #000066;">+</span> fmShareDenyWrite<span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">64</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span> <span style="color: #000066;">+</span> fmShareExclusive<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">else</span>
+              <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> Starts<span style="color: #000066;">(</span><span style="color: #ff0000;">'--x='</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #000000; font-weight: bold;">case</span> <span style="color: #000066;">StrToInt</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--x='</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>MAXINT<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">of</span>
+              <span style="color: #0000ff;">1</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">2</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">*</span><span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span>
+              <span style="color: #0000ff;">3</span><span style="color: #000066;">:</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">*</span><span style="color: #0000ff;">1024</span><span style="color: #000066;">*</span><span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">else</span>
+              <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span>
+          <span style="color: #000000; font-weight: bold;">else</span>
+            <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">SameText</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'--help'</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          WriteHelp<span style="color: #000066;">;</span>
+          Halt<span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+          <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #ff0000;">'-'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span> &gt; <span style="color: #0000ff;">1</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">SameText</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'-h'</span><span style="color: #000066;">,</span>Str<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          WriteHelp<span style="color: #000066;">;</span>
+          Halt<span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+          <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        <span style="color: #000000; font-weight: bold;">raise</span> EGetOptError<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Str<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      WriteHelp<span style="color: #000066;">;</span>
+      Halt<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> WriteHeader<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Writeln<span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Dump 0.2 - Copyright (c) 2007 Domingo Seoane'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'&lt;a href="http://delphi.jmrds.com'</span>"&gt;http<span style="color: #000066;">:</span><span style="color: #808080; font-style: italic;">//delphi.jmrds.com'&lt;/a&gt;);</span>
+  Writeln<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>   
+ 
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">;</span>
+  Src<span style="color: #000066;">,</span> Dst<span style="color: #000066;">:</span> TFileStream<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  WriteHeader<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    GetOpt<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+      Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span> <span style="color: #000066;">*</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Mult</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span> &lt; <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">then</span>
+      Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">8</span> <span style="color: #000066;">*</span> <span style="color: #0000ff;">1024</span> <span style="color: #000066;">*</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+      Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmOpenRead <span style="color: #000000; font-weight: bold;">or</span> fmShareDenyNone<span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+      Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> fmCreate<span style="color: #000066;">;</span>
+    <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      Src<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">InputFile</span><span style="color: #000066;">,</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">InputMode</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        Dst<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TFileStream<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputFile</span><span style="color: #000066;">,</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">OutputMode</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">try</span>
+          i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Src<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">while</span> i &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">do</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            Dst<span style="color: #000066;">.</span><span style="color: #006600;">WriteBuffer</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #000000; font-weight: bold;">begin</span>
+              <span style="color: #000066;">dec</span><span style="color: #000066;">(</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+              <span style="color: #000000; font-weight: bold;">if</span> Options<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+                break<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+            i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Src<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Read</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>Options<span style="color: #000066;">.</span><span style="color: #006600;">BlockSize</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">finally</span>
+          Dst<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        Src<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">finally</span>
+      <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">except</span>
+    <span style="color: #000000; font-weight: bold;">On</span> E<span style="color: #000066;">:</span> Exception <span style="color: #000000; font-weight: bold;">do</span>
+      <span style="color: #000066;">Writeln</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'Error: '</span> <span style="color: #000066;">+</span> E<span style="color: #000066;">.</span><span style="color: #000000; font-weight: bold;">Message</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>El código y el programa ya compilado puedes bajarlo de <a href="/sites/delphi.jmrds.com/adjuntos/dump_delphi.zip">aquí</a></p>
+<p>La primera utilidad que se me ocurre es crear una imagen de un disco duro, disquete, memoria usb o incluso un Cdrom. Solo hay que recordar que para leer este tipo de dispositivos hay que hacerlo en bloques de un tamaño determinado, normalmente ese tamaño tiene que cumplir la condición de ser múltiplo de 512 (el tamaño de un sector). Esto se explica mejor con un ejemplo:</p>
+<p><b>dump --if=\\.\F: --of=imagen.bin --bs=4096</b><br />
+   Guarda una imagen del disco F en el archivo "imagen.bin"<br /><b>dump --of=\\.\a: --if=imagen.bin --bs=1 --x=2 --om=24</b><br />
+   Graba una imagen en un disquete, solo hay que tener en cuenta que para escribir en un disco el parámetro "--om" debe ser 24.</p>
+<p><b>ACTUALIZACIÓN:</b> En Windows Vista y Windows 7 para poder escribir en un disco de debe ejecutar la aplicación como administrador, y tener acceso exclusivo. Por eso hay que utilizar el parámetro <b>"--om=72"</b>, asegurándose primero de que ninguna otra aplicación esta utilizando el disco.</p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-33"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/33#comment-33" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/33#comment-33" class="permalink" rel="bookmark">Hola Domingo,
+Como siempre,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/33#comment-33" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T01:54:09+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://dec.gesbit.com" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">dec (no verificado)</a> el Lun, 12/17/2007 - 01:54</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola Domingo,</p>
+<p>Como siempre, muy interesante tu entrada. Te felicito por ello. Saludos.</p>
+<p>PD. Hay una errata que impide bajar el programa siguiendo el enlace: en lugar de "href" verás que pone "hre".</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-34"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/34#comment-34" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/34#comment-34" class="permalink" rel="bookmark">Me he llevado una sorpresa.</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/34#comment-34" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T04:23:52+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <a href="http://espira.net/nico/" rel="nofollow foaf:page" class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Nico (no verificado)</a> el Lun, 12/17/2007 - 04:23</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Me he llevado una sorpresa. Había visto que un dd para Windows que anda por ahí usaba esa notación para las unidades de disco. Pero pensaba que era algo que hace el programa, no sabía que lo permite el sistema operativo.</p>
+<p>Por cierto que está chulo el programita :-)</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-38"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/38#comment-38" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/38#comment-38" class="permalink" rel="bookmark">Si, mucha gente no lo sabe</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/38#comment-38" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T14:32:27+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Lun, 12/17/2007 - 14:32</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/34#comment-34" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Si, mucha gente no lo sabe pero windows permite leer varios dispositivos como si de archivos se trataran (discos, puerto serie, ...). Y aunque no llega al nivel de linux, en que "casi todo" se puede tratar como un archivo (solo hay que ver la carpeta "/dev"), si tiene posibilidades interesantes, como borrar ... perdón, copiar el MBR, jejeje. Solo hay que tener cuidado con las características propias de cada dispositivo, por ejemplo, los discos solo se pueden leer en bloques múltiplos de 512 y se deben de abrir con los permisos que menciono arriba, el puerto serie no soporta la función seek, etc ...</p>
+<p>Si te interesa el tema, en este <a href="http://delphi.jmrds.com/?q=node/42">otro articulo</a> sobre como recuperar fotos jpg borradas de un disco, puedes ver un código que se puede compilar tanto en windows como en linux (freepascal) y la única diferencia entre usarlo en windows o en linux es que mientras en windows el parámetro "--if" seria algo así "\\.\C:" en linux seria así "/dev/hda1".</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-35"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/35#comment-35" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/35#comment-35" class="permalink" rel="bookmark">Fabuloso :)</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/35#comment-35" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T08:44:02+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Casimiro (no verificado)</span> el Lun, 12/17/2007 - 08:44</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Fabuloso :)</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+<a id="comment-36"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/36#comment-36" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/36#comment-36" class="permalink" rel="bookmark">Sí, fabuloso, aunque</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/36#comment-36" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T08:48:54+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Casimiro (no verificado)</span> el Lun, 12/17/2007 - 08:48</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Sí, fabuloso, aunque ¡¡¡no se puede descargar el archivo!!! :D:D:D</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+<div class="indented"><a id="comment-37"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/37#comment-37" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/37#comment-37" class="permalink" rel="bookmark">Vaya, no perdonáis una,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/37#comment-37" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2007-12-17T14:21:17+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Lun, 12/17/2007 - 14:21</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/36#comment-36" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Vaya, no perdonáis una, jejeje. Era domingo por la tarde y una "f" se le olvida a cualquiera. El enlace ya funciona.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+</div><a id="comment-63"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/63#comment-63" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/63#comment-63" class="permalink" rel="bookmark">El comando dd tambien está</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/63#comment-63" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2008-07-16T15:00:53+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">laverdadciega (no verificado)</span> el Mié, 07/16/2008 - 15:00</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/45" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>El comando dd tambien está para Windows, y usa una sintaxis de unidades como la que expones:<br /><a href="http://www.chrysocome.net/dd">http://www.chrysocome.net/dd</a><br />
+Por otra parte: joder, qué bueno eres.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>

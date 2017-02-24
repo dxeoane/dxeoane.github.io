@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/delphi.jmrds.com/themes/bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/76" />
+<link rel="canonical" href="/node/76" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Servidor UDP sencillo | La web de Seoane</title>
+  <style>
+@import url("/modules/system/system.base.css?");
+</style>
+<style>
+@import url("/modules/field/theme/field.css?");
+@import url("/modules/node/node.css?");
+</style>
+<style>
+@import url("/sites/delphi.jmrds.com/modules/geshifilter/geshifilter.css?");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all" />
+<style>
+@import url("/sites/delphi.jmrds.com/themes/bootstrap/css/3.3.5/overrides.min.css?");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="/sites/delphi.jmrds.com/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="/sites/delphi.jmrds.com/files/languages/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js?"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap","theme_token":"P5WZqIXf4Wc6Q5vdgTqZb06TTUswk9rcfpgSrL1FYAw","js":{"sites\/delphi.jmrds.com\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/delphi.jmrds.com\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/js\/bootstrap.js":1,"public:\/\/languages\/es_sB9mP1iixuFRbyZKZVySK7xrSW_2-LRj1vNEXyqwOu8.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/delphi.jmrds.com\/modules\/geshifilter\/geshifilter.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.3.5\/css\/bootstrap.css":1,"sites\/delphi.jmrds.com\/themes\/bootstrap\/css\/3.3.5\/overrides.min.css":1}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-76 node-type-article">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Inicio">
+          <img src="/sites/delphi.jmrds.com/themes/bootstrap/logo.png" alt="Inicio" />
+        </a>
+      
+              <a class="name navbar-brand" href="/" title="Inicio">La web de Seoane</a>
+      
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/" title="">Inicio</a></li>
+<li class="leaf"><a href="/search/node" title="">Buscar</a></li>
+<li class="leaf"><a href="/rss.xml" title="">RSS</a></li>
+<li class="leaf"><a href="/node/26" title="">Contacto</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>                                      </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Servidor UDP sencillo</h1>
+                                                          <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-76" class="node node-article node-promoted clearfix" about="/node/76" typeof="sioc:Item foaf:Document">
+    <header>
+            <span property="dc:title" content="Servidor UDP sencillo" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="1" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2012-05-20T21:36:11+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">admin</span> el Dom, 05/20/2012 - 21:36</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Este es un ejemplo de servidor UDP pequeño y ligero, sin grandes pretensiones. Su funcionamiento es sencillo, al ejecutar el programa se pone a escuchar por el puerto 61978 a la espera de recibir un comando, cuando lo recibe crea un nuevo hilo de ejecución que se encarga de procesar el comando y, si es necesario, enviar una respuesta.</p>
+<!--break--><p>Los comandos que recibe deben ser lineas de texto con el siguiente formato:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">[Uid] comando parametros</pre></div>
+<p>Donde "comando" se refiere a la orden que debe ejecutar el servidor y "parámetros" a la lista de parámetros, separados por espacios, que se le pasan a ese comando. En cuanto a "Uid" es un identificador único (un número entero mayor de cero) que sera agregado al principio de la respuesta que envía el servidor, de tal forma que podemos emparejar un comando con su respuesta. El "Uid" es opcional y si no se envía la respuesta tampoco ira encabezada por ningún identificador.</p>
+<p>Algunos ejemplos de comandos son:</p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">time
+date
+random
+echo "Hola mundo"
+1234 echo "Hola mundo"
+delay 5 echo "Han pasado 5 segundos"
+quit</pre></div>
+<p>El código fuente es el siguiente (es una aplicación de consola):</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">program</span> udpsrv<span style="color: #000066;">;</span>
+ 
+<span style="color: #008000; font-style: italic;">{$APPTYPE CONSOLE}</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span> Windows<span style="color: #000066;">,</span> Sysutils<span style="color: #000066;">,</span> Classes<span style="color: #000066;">,</span> Winsock<span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">type</span>
+  <span style="color: #808080; font-style: italic;">// Esta clase procesa los comandos</span>
+  TProcess <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">class</span><span style="color: #000066;">(</span>TThread<span style="color: #000066;">)</span>
+  <span style="color: #000000; font-weight: bold;">private</span>
+    FAddress<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span>
+    FCmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span>
+    FSocket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+    FTerminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">;</span>
+    FMutex<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">THandle</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">protected</span>
+    <span style="color: #000000; font-weight: bold;">procedure</span> Execute<span style="color: #000066;">;</span> <span style="color: #000000; font-weight: bold;">override</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">public</span>
+    <span style="color: #000000; font-weight: bold;">constructor</span> Create<span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span> Socket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+      Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span> Term<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">destructor</span> Destroy<span style="color: #000066;">;</span> <span style="color: #000000; font-weight: bold;">override</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">const</span>
+  CR <span style="color: #000066;">=</span> <span style="color: #ff0000;">#13</span><span style="color: #000066;">;</span>
+  LF <span style="color: #000066;">=</span> <span style="color: #ff0000;">#10</span><span style="color: #000066;">;</span>
+  CRLF <span style="color: #000066;">=</span> CR <span style="color: #000066;">+</span> LF<span style="color: #000066;">;</span>
+  BUFFER_SIZE <span style="color: #000066;">=</span> <span style="color: #0000ff;">64</span> <span style="color: #000066;">*</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span> <span style="color: #808080; font-style: italic;">// 64 Kilobytes</span>
+ 
+<span style="color: #808080; font-style: italic;">{ TProcess }</span>
+ 
+<span style="color: #000000; font-weight: bold;">constructor</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span> Socket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+  Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span> Term<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  FAddress<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Addr<span style="color: #000066;">;</span>
+  FCmdLine<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  FSocket<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Socket<span style="color: #000066;">;</span>
+  FTerminated<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Term<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un mutex para evitar que dos threads utilicen el socket a la vez</span>
+  FMutex<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateMutex<span style="color: #000066;">(</span><span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">,</span>
+    <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'{2471216C-2028-4163-AFC9-B0238E5B26EC}/'</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span>Socket<span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Si no podemos crear el mutex anulamos todo</span>
+  <span style="color: #000000; font-weight: bold;">if</span> FMutex <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    Abort<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Al terminar liberamos el objeto</span>
+  FreeOnTerminate<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">inherited</span> Create<span style="color: #000066;">(</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">destructor</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Destroy</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Cerramos el mutex</span>
+  <span style="color: #000000; font-weight: bold;">if</span> FMutex &lt;&gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    CloseHandle<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Execute</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  Params<span style="color: #000066;">:</span> TStringList<span style="color: #000066;">;</span>
+  Uid<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">int64</span><span style="color: #000066;">;</span>
+  Resp<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Params<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TStringList<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">Delimiter</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">#32</span><span style="color: #000066;">;</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">QuoteChar</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'"'</span><span style="color: #000066;">;</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">StrictDelimiter</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Separamos cada uno de los parametros</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">DelimitedText</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> FCmdLine<span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Uid por defecto</span>
+    Uid<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Respuesta por defecto</span>
+    Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> EmptyStr<span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Implementamos algunos comandos basicos (hora, fecha, echo, quit, etc ...)</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Si mandamos un Uid obtenemos su valor y lo separamos</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">TryStrToInt64</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span>Uid<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000000; font-weight: bold;">TRUE</span> <span style="color: #000000; font-weight: bold;">do</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #808080; font-style: italic;">// Terminamos</span>
+          <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'QUIT'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            FTerminated<span style="color: #000066;">^</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span>
+          <span style="color: #808080; font-style: italic;">// Fecha</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'DATE'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">FormatDateTime</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'dd/mm/yyyy'</span><span style="color: #000066;">,</span> Date<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> CRLF
+          <span style="color: #808080; font-style: italic;">// Hora</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'TIME'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">FormatDateTime</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'hh:nn:ss'</span><span style="color: #000066;">,</span> Time<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> CRLF
+          <span style="color: #808080; font-style: italic;">// Caracteres aleatorios</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'RANDOM'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> EmptyStr<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span> &lt; <span style="color: #0000ff;">32</span>  <span style="color: #000000; font-weight: bold;">do</span>
+              Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Resp <span style="color: #000066;">+</span> <span style="color: #000066;">Chr</span><span style="color: #000066;">(</span><span style="color: #000066;">Random</span><span style="color: #000066;">(</span><span style="color: #0000ff;">94</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">33</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Resp <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Echo</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'ECHO'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">then</span>
+              Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Params<span style="color: #000066;">[</span><span style="color: #0000ff;">1</span><span style="color: #000066;">]</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Delay (Retrasa otro comando X segundos)</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'DELAY'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">2</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #000000; font-weight: bold;">begin</span>
+              <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">TryStrToInt</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">1</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span>i&lt;<span style="color: #000066;">=</span><span style="color: #0000ff;">60</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+              <span style="color: #000000; font-weight: bold;">begin</span>
+                <span style="color: #808080; font-style: italic;">// Esperamos</span>
+                <span style="color: #000066;">Sleep</span><span style="color: #000066;">(</span>i<span style="color: #000066;">*</span><span style="color: #0000ff;">1000</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Borramos los dos primeros parametros</span>
+                Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Reconstruimos la linea de comandos</span>
+                FCmdLine<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">DelimitedText</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Volmemos a ejecutar el bucle</span>
+                Continue<span style="color: #000066;">;</span>
+              <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Podemos añadir los comandos que queramos</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'TUCOMANDO'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'TURESPUESTA'</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Salimos del bucle</span>
+          break<span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Si hay respuesta y no hemos terminado</span>
+    <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span>Resp &lt;&gt; EmptyStr<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000000; font-weight: bold;">not</span> FTerminated<span style="color: #000066;">^</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #808080; font-style: italic;">// Esperamos a tener el control del socket</span>
+      <span style="color: #000000; font-weight: bold;">if</span> WaitForSingleObject<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">,</span> INFINITE<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> WAIT_OBJECT_0 <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        <span style="color: #808080; font-style: italic;">// Añadimos el Uid a la respuesta si es mayor de cero</span>
+        <span style="color: #000000; font-weight: bold;">if</span> Uid &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>Uid<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#32</span> <span style="color: #000066;">+</span> Resp<span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Enviamos la respuesta</span>
+        Sendto<span style="color: #000066;">(</span>FSocket<span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>FAddress<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>FAddress<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        <span style="color: #808080; font-style: italic;">// Cedemos el control del socket</span>
+        ReleaseMutex<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> UDPLoop<span style="color: #000066;">(</span>Port<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span> Terminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  S<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+  Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span>
+  AddrSize<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  FDSet<span style="color: #000066;">:</span> TFDSet<span style="color: #000066;">;</span>
+  TimeVal<span style="color: #000066;">:</span> TTimeVal<span style="color: #000066;">;</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">;</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un socket</span>
+  S<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Winsock<span style="color: #000066;">.</span><span style="color: #006600;">Socket</span><span style="color: #000066;">(</span>AF_INET<span style="color: #000066;">,</span> SOCK_DGRAM<span style="color: #000066;">,</span> IPPROTO_IP<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> S <span style="color: #000066;">=</span> INVALID_SOCKET <span style="color: #000000; font-weight: bold;">then</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">with</span> Addr <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    sin_family<span style="color: #000066;">:</span><span style="color: #000066;">=</span> AF_INET<span style="color: #000066;">;</span>
+    sin_port<span style="color: #000066;">:</span><span style="color: #000066;">=</span> htons<span style="color: #000066;">(</span>Port<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    sin_addr<span style="color: #000066;">.</span><span style="color: #006600;">s_addr</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Inet_Addr<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'0.0.0.0'</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Lo ponemos a la escucha</span>
+  <span style="color: #000000; font-weight: bold;">if</span> Bind<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span> Addr<span style="color: #000066;">,</span> <span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> SOCKET_ERROR <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #808080; font-style: italic;">// Si no podemos, cerramos el socket</span>
+    CloseSocket<span style="color: #000066;">(</span>S<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Y terminamos</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos espacio para almacenar los mensajes</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Bucle</span>
+    <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000000; font-weight: bold;">not</span> Terminated<span style="color: #000066;">^</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      TimeVal<span style="color: #000066;">.</span><span style="color: #006600;">tv_sec</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+      TimeVal<span style="color: #000066;">.</span><span style="color: #006600;">tv_usec</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">500</span><span style="color: #000066;">;</span>
+      FD_ZERO<span style="color: #000066;">(</span>FDSet<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      FD_SET<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span> FDSet<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Comprobamos si ha recibido algun mensaje</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Select<span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000066;">@</span>FDSet<span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span> <span style="color: #000066;">@</span>TimeVal<span style="color: #000066;">)</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        AddrSize<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">,</span><span style="color: #ff0000;">#0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Copiamos el mensaje en el buffer</span>
+        i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Recvfrom<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>sockaddr_in<span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">,</span>AddrSize<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">if</span> i &lt;&gt; SOCKET_ERROR <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #808080; font-style: italic;">// Creamos un nuevo thread para procesar el mensaje</span>
+          TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span><span style="color: #000066;">,</span>S<span style="color: #000066;">,</span>Addr<span style="color: #000066;">,</span>Terminated<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Sleep</span><span style="color: #000066;">(</span><span style="color: #0000ff;">10</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #808080; font-style: italic;">// Liberamos el buffer</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Cerramos el socket</span>
+   CloseSocket<span style="color: #000066;">(</span>S<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">var</span>
+  WSAData<span style="color: #000066;">:</span> TWSAData<span style="color: #000066;">;</span>
+  Terminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Randomize<span style="color: #000066;">;</span>
+  <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> WSAStartup<span style="color: #000066;">(</span>MAKEWORD<span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span> WSADATA<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      Terminated<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Ejectamos el bucle del servidor</span>
+      UDPLoop<span style="color: #000066;">(</span><span style="color: #0000ff;">61978</span><span style="color: #000066;">,</span><span style="color: #000066;">@</span>Terminated<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">except</span>
+      <span style="color: #808080; font-style: italic;">//</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    WSACleanup<span style="color: #000066;">(</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>Para enviar los comandos se necesita otra aplicación, yo recomiendo ncat <a href="http://nmap.org/ncat/">http://nmap.org/ncat/</a> </p>
+<div class="geshifilter">
+<pre class="text geshifilter-text" style="font-family:monospace;">C:\Users\Seoane&gt;ncat -u 127.0.0.1 61978
+date
+20/05/2012
+time
+21:09:57
+echo "Hola mundo"
+Hola mundo
+123 echo "con uid"
+123 con uid
+quit</pre></div>
+<p>Para demostrar el funcionamiento del servidor se han implementado algunos comandos básicos, pero como se puede ver en el código es muy sencillo añadir nuevos comandos. Por ejemplo aquí dejo el mismo código de antes pero añadiendo 3 comandos que permiten controlar el volumen de los altavoces (Subir, Bajar y Mute):</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">program</span> udpsrv<span style="color: #000066;">;</span>
+ 
+<span style="color: #008000; font-style: italic;">{$APPTYPE CONSOLE}</span>
+ 
+<span style="color: #000000; font-weight: bold;">uses</span> Windows<span style="color: #000066;">,</span> Sysutils<span style="color: #000066;">,</span> Classes<span style="color: #000066;">,</span> Winsock<span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">type</span>
+  <span style="color: #808080; font-style: italic;">// Esta clase procesa los comandos</span>
+  TProcess <span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">class</span><span style="color: #000066;">(</span>TThread<span style="color: #000066;">)</span>
+  <span style="color: #000000; font-weight: bold;">private</span>
+    FAddress<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span>
+    FCmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span>
+    FSocket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+    FTerminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">;</span>
+    FMutex<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">THandle</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">protected</span>
+    <span style="color: #000000; font-weight: bold;">procedure</span> Execute<span style="color: #000066;">;</span> <span style="color: #000000; font-weight: bold;">override</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">public</span>
+    <span style="color: #000000; font-weight: bold;">constructor</span> Create<span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span> Socket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+      Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span> Term<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">destructor</span> Destroy<span style="color: #000066;">;</span> <span style="color: #000000; font-weight: bold;">override</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">const</span>
+  CR <span style="color: #000066;">=</span> <span style="color: #ff0000;">#13</span><span style="color: #000066;">;</span>
+  LF <span style="color: #000066;">=</span> <span style="color: #ff0000;">#10</span><span style="color: #000066;">;</span>
+  CRLF <span style="color: #000066;">=</span> CR <span style="color: #000066;">+</span> LF<span style="color: #000066;">;</span>
+  BUFFER_SIZE <span style="color: #000066;">=</span> <span style="color: #0000ff;">64</span> <span style="color: #000066;">*</span> <span style="color: #0000ff;">1024</span><span style="color: #000066;">;</span> <span style="color: #808080; font-style: italic;">// 64 Kilobytes</span>
+ 
+  VK_VOLUME_MUTE <span style="color: #000066;">=</span> <span style="color: #0000cc;">$AD</span><span style="color: #000066;">;</span>
+  VK_VOLUME_DOWN <span style="color: #000066;">=</span> <span style="color: #0000cc;">$AE</span><span style="color: #000066;">;</span>
+  VK_VOLUME_UP <span style="color: #000066;">=</span> <span style="color: #0000cc;">$AF</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> Pulsar<span style="color: #000066;">(</span>Key<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Byte</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+ keybd_event<span style="color: #000066;">(</span>Key<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+ keybd_event<span style="color: #000066;">(</span>Key<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> KEYEVENTF_KEYUP<span style="color: #000066;">,</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> SubirVolumen<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Pulsar<span style="color: #000066;">(</span>VK_VOLUME_UP<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> BajarVolumen<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Pulsar<span style="color: #000066;">(</span>VK_VOLUME_DOWN<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> Mute<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Pulsar<span style="color: #000066;">(</span>VK_VOLUME_MUTE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #808080; font-style: italic;">{ TProcess }</span>
+ 
+<span style="color: #000000; font-weight: bold;">constructor</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span> Socket<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+  Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span> Term<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  FAddress<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Addr<span style="color: #000066;">;</span>
+  FCmdLine<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Trim</span><span style="color: #000066;">(</span>CmdLine<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  FSocket<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Socket<span style="color: #000066;">;</span>
+  FTerminated<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Term<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un mutex para evitar que dos threads utilicen el socket a la vez</span>
+  FMutex<span style="color: #000066;">:</span><span style="color: #000066;">=</span> CreateMutex<span style="color: #000066;">(</span><span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">,</span>
+    <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'{2471216C-2028-4163-AFC9-B0238E5B26EC}/'</span> <span style="color: #000066;">+</span> <span style="color: #000066;">IntToHex</span><span style="color: #000066;">(</span>Socket<span style="color: #000066;">,</span><span style="color: #0000ff;">8</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Si no podemos crear el mutex anulamos todo</span>
+  <span style="color: #000000; font-weight: bold;">if</span> FMutex <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    Abort<span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Al terminar liberamos el objeto</span>
+  FreeOnTerminate<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">inherited</span> Create<span style="color: #000066;">(</span><span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">destructor</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Destroy</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Cerramos el mutex</span>
+  <span style="color: #000000; font-weight: bold;">if</span> FMutex &lt;&gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    CloseHandle<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Execute</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  Params<span style="color: #000066;">:</span> TStringList<span style="color: #000066;">;</span>
+  Uid<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">int64</span><span style="color: #000066;">;</span>
+  Resp<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Params<span style="color: #000066;">:</span><span style="color: #000066;">=</span> TStringList<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">Delimiter</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">#32</span><span style="color: #000066;">;</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">QuoteChar</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'"'</span><span style="color: #000066;">;</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">StrictDelimiter</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Separamos cada uno de los parametros</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">DelimitedText</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> FCmdLine<span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Uid por defecto</span>
+    Uid<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">-</span><span style="color: #0000ff;">1</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Respuesta por defecto</span>
+    Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> EmptyStr<span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Implementamos algunos comandos basicos (hora, fecha, echo, quit, etc ...)</span>
+    <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      <span style="color: #808080; font-style: italic;">// Si mandamos un Uid obtenemos su valor y lo separamos</span>
+      <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">TryStrToInt64</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span>Uid<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+        Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+        <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000000; font-weight: bold;">TRUE</span> <span style="color: #000000; font-weight: bold;">do</span>
+        <span style="color: #000000; font-weight: bold;">begin</span>
+          <span style="color: #808080; font-style: italic;">// Terminamos</span>
+          <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'QUIT'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            FTerminated<span style="color: #000066;">^</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">TRUE</span>
+          <span style="color: #808080; font-style: italic;">// Fecha</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'DATE'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">FormatDateTime</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'dd/mm/yyyy'</span><span style="color: #000066;">,</span> Date<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> CRLF
+          <span style="color: #808080; font-style: italic;">// Hora</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'TIME'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">FormatDateTime</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'hh:nn:ss'</span><span style="color: #000066;">,</span> Time<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> CRLF
+          <span style="color: #808080; font-style: italic;">// Caracteres aleatorios</span>
+          <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'RANDOM'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> EmptyStr<span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span> &lt; <span style="color: #0000ff;">32</span>  <span style="color: #000000; font-weight: bold;">do</span>
+              Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Resp <span style="color: #000066;">+</span> <span style="color: #000066;">Chr</span><span style="color: #000066;">(</span><span style="color: #000066;">Random</span><span style="color: #000066;">(</span><span style="color: #0000ff;">94</span><span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #0000ff;">33</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Resp <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Echo</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'ECHO'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">1</span> <span style="color: #000000; font-weight: bold;">then</span>
+              Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Params<span style="color: #000066;">[</span><span style="color: #0000ff;">1</span><span style="color: #000066;">]</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Delay (Retrasa otro comando X segundos)</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'DELAY'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            <span style="color: #000000; font-weight: bold;">if</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">Count</span> &gt; <span style="color: #0000ff;">2</span> <span style="color: #000000; font-weight: bold;">then</span>
+            <span style="color: #000000; font-weight: bold;">begin</span>
+              <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">TryStrToInt</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">1</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000066;">(</span>i&lt;<span style="color: #000066;">=</span><span style="color: #0000ff;">60</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+              <span style="color: #000000; font-weight: bold;">begin</span>
+                <span style="color: #808080; font-style: italic;">// Esperamos</span>
+                <span style="color: #000066;">Sleep</span><span style="color: #000066;">(</span>i<span style="color: #000066;">*</span><span style="color: #0000ff;">1000</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Borramos los dos primeros parametros</span>
+                Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                Params<span style="color: #000066;">.</span><span style="color: #000066;">Delete</span><span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Reconstruimos la linea de comandos</span>
+                FCmdLine<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Params<span style="color: #000066;">.</span><span style="color: #006600;">DelimitedText</span><span style="color: #000066;">;</span>
+                <span style="color: #808080; font-style: italic;">// Volmemos a ejecutar el bucle</span>
+                Continue<span style="color: #000066;">;</span>
+              <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+            <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Podemos añadir los comandos que queramos</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'SUBIR'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            SubirVolumen<span style="color: #000066;">;</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'OK'</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'BAJAR'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            BajarVolumen<span style="color: #000066;">;</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'OK'</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span> <span style="color: #000000; font-weight: bold;">else</span> <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">AnsiSameText</span><span style="color: #000066;">(</span>Params<span style="color: #000066;">[</span><span style="color: #0000ff;">0</span><span style="color: #000066;">]</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'MUTE'</span><span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #000000; font-weight: bold;">begin</span>
+            Mute<span style="color: #000066;">;</span>
+            Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #ff0000;">'OK'</span> <span style="color: #000066;">+</span> CRLF<span style="color: #000066;">;</span>
+          <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+          <span style="color: #808080; font-style: italic;">// Salimos del bucle</span>
+          break<span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+    <span style="color: #808080; font-style: italic;">// Si hay respuesta y no hemos terminado</span>
+    <span style="color: #000000; font-weight: bold;">if</span> <span style="color: #000066;">(</span>Resp &lt;&gt; EmptyStr<span style="color: #000066;">)</span> <span style="color: #000000; font-weight: bold;">and</span> <span style="color: #000000; font-weight: bold;">not</span> FTerminated<span style="color: #000066;">^</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #808080; font-style: italic;">// Esperamos a tener el control del socket</span>
+      <span style="color: #000000; font-weight: bold;">if</span> WaitForSingleObject<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">,</span> INFINITE<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> WAIT_OBJECT_0 <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">try</span>
+        <span style="color: #808080; font-style: italic;">// Añadimos el Uid a la respuesta si es mayor de cero</span>
+        <span style="color: #000000; font-weight: bold;">if</span> Uid &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+          Resp<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">IntToStr</span><span style="color: #000066;">(</span>Uid<span style="color: #000066;">)</span> <span style="color: #000066;">+</span> <span style="color: #ff0000;">#32</span> <span style="color: #000066;">+</span> Resp<span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Enviamos la respuesta</span>
+        Sendto<span style="color: #000066;">(</span>FSocket<span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Resp<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>FAddress<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>FAddress<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">finally</span>
+        <span style="color: #808080; font-style: italic;">// Cedemos el control del socket</span>
+        ReleaseMutex<span style="color: #000066;">(</span>FMutex<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    Params<span style="color: #000066;">.</span><span style="color: #006600;">Free</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> UDPLoop<span style="color: #000066;">(</span>Port<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Word</span><span style="color: #000066;">;</span> Terminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PBoolean</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+  S<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+  Addr<span style="color: #000066;">:</span> TSockaddr<span style="color: #000066;">;</span>
+  AddrSize<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+  FDSet<span style="color: #000066;">:</span> TFDSet<span style="color: #000066;">;</span>
+  TimeVal<span style="color: #000066;">:</span> TTimeVal<span style="color: #000066;">;</span>
+  Buffer<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">;</span>
+  i<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Integer</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #808080; font-style: italic;">// Creamos un socket</span>
+  S<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Winsock<span style="color: #000066;">.</span><span style="color: #006600;">Socket</span><span style="color: #000066;">(</span>AF_INET<span style="color: #000066;">,</span> SOCK_DGRAM<span style="color: #000066;">,</span> IPPROTO_IP<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> S <span style="color: #000066;">=</span> INVALID_SOCKET <span style="color: #000000; font-weight: bold;">then</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">with</span> Addr <span style="color: #000000; font-weight: bold;">do</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    sin_family<span style="color: #000066;">:</span><span style="color: #000066;">=</span> AF_INET<span style="color: #000066;">;</span>
+    sin_port<span style="color: #000066;">:</span><span style="color: #000066;">=</span> htons<span style="color: #000066;">(</span>Port<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    sin_addr<span style="color: #000066;">.</span><span style="color: #006600;">s_addr</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Inet_Addr<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PChar</span><span style="color: #000066;">(</span><span style="color: #ff0000;">'0.0.0.0'</span><span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Lo ponemos a la escucha</span>
+  <span style="color: #000000; font-weight: bold;">if</span> Bind<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span> Addr<span style="color: #000066;">,</span> <span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">)</span> <span style="color: #000066;">=</span> SOCKET_ERROR <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">begin</span>
+    <span style="color: #808080; font-style: italic;">// Si no podemos, cerramos el socket</span>
+    CloseSocket<span style="color: #000066;">(</span>S<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #808080; font-style: italic;">// Y terminamos</span>
+    Exit<span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Reservamos espacio para almacenar los mensajes</span>
+  <span style="color: #000066;">GetMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #808080; font-style: italic;">// Bucle</span>
+    <span style="color: #000000; font-weight: bold;">while</span> <span style="color: #000000; font-weight: bold;">not</span> Terminated<span style="color: #000066;">^</span> <span style="color: #000000; font-weight: bold;">do</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      TimeVal<span style="color: #000066;">.</span><span style="color: #006600;">tv_sec</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span><span style="color: #000066;">;</span>
+      TimeVal<span style="color: #000066;">.</span><span style="color: #006600;">tv_usec</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #0000ff;">500</span><span style="color: #000066;">;</span>
+      FD_ZERO<span style="color: #000066;">(</span>FDSet<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      FD_SET<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span> FDSet<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Comprobamos si ha recibido algun mensaje</span>
+      <span style="color: #000000; font-weight: bold;">if</span> Select<span style="color: #000066;">(</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span> <span style="color: #000066;">@</span>FDSet<span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span> <span style="color: #000000; font-weight: bold;">nil</span><span style="color: #000066;">,</span> <span style="color: #000066;">@</span>TimeVal<span style="color: #000066;">)</span> &gt; <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+      <span style="color: #000000; font-weight: bold;">begin</span>
+        AddrSize<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000066;">Sizeof</span><span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">,</span><span style="color: #ff0000;">#0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #808080; font-style: italic;">// Copiamos el mensaje en el buffer</span>
+        i<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Recvfrom<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span>Buffer<span style="color: #000066;">^</span><span style="color: #000066;">,</span>BUFFER_SIZE<span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>sockaddr_in<span style="color: #000066;">(</span>Addr<span style="color: #000066;">)</span><span style="color: #000066;">,</span>AddrSize<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+        <span style="color: #000000; font-weight: bold;">if</span> i &lt;&gt; SOCKET_ERROR <span style="color: #000000; font-weight: bold;">then</span>
+          <span style="color: #808080; font-style: italic;">// Creamos un nuevo thread para procesar el mensaje</span>
+          TProcess<span style="color: #000066;">.</span><span style="color: #006600;">Create</span><span style="color: #000066;">(</span><span style="color: #000066;">Copy</span><span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span>i<span style="color: #000066;">)</span><span style="color: #000066;">,</span>S<span style="color: #000066;">,</span>Addr<span style="color: #000066;">,</span>Terminated<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+      <span style="color: #000066;">Sleep</span><span style="color: #000066;">(</span><span style="color: #0000ff;">10</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    <span style="color: #808080; font-style: italic;">// Liberamos el buffer</span>
+    <span style="color: #000066;">FreeMem</span><span style="color: #000066;">(</span>Buffer<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #808080; font-style: italic;">// Cerramos el socket</span>
+   CloseSocket<span style="color: #000066;">(</span>S<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">var</span>
+  WSAData<span style="color: #000066;">:</span> TWSAData<span style="color: #000066;">;</span>
+  Terminated<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">Boolean</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  Randomize<span style="color: #000066;">;</span>
+  <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> WSAStartup<span style="color: #000066;">(</span>MAKEWORD<span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span> WSADATA<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    <span style="color: #000000; font-weight: bold;">try</span>
+      Terminated<span style="color: #000066;">:</span><span style="color: #000066;">=</span> <span style="color: #000000; font-weight: bold;">FALSE</span><span style="color: #000066;">;</span>
+      <span style="color: #808080; font-style: italic;">// Ejectamos el bucle del servidor</span>
+      UDPLoop<span style="color: #000066;">(</span><span style="color: #0000ff;">61978</span><span style="color: #000066;">,</span><span style="color: #000066;">@</span>Terminated<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">except</span>
+      <span style="color: #808080; font-style: italic;">//</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    WSACleanup<span style="color: #000066;">(</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">.</span></pre></div>
+<p>Y para hacer las cosas mas sencillas aun, podemos crear un programa que nos permita enviar los comando al pulsar un botón. Algo como esto:<br /></p><center><img src="/sites/delphi.jmrds.com/imagenes/Stories/udpvol.png" /></center>
+<p>El código del programa lo podemos resumir en esta cuatro funciones:</p>
+<div class="geshifilter">
+<pre class="delphi geshifilter-delphi" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">uses</span> Winsock<span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> EnviarMensaje<span style="color: #000066;">(</span>Servidor<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">;</span> Mensaje<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">AnsiString</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">var</span>
+ WSAData<span style="color: #000066;">:</span> TWSAData<span style="color: #000066;">;</span>
+ S<span style="color: #000066;">:</span> TSocket<span style="color: #000066;">;</span>
+ SockAddr<span style="color: #000066;">:</span> TSockAddrIn<span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  <span style="color: #000066;">FillChar</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>WSAData<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">if</span> WSAStartup<span style="color: #000066;">(</span>MAKEWORD<span style="color: #000066;">(</span><span style="color: #0000ff;">1</span><span style="color: #000066;">,</span> <span style="color: #0000ff;">1</span><span style="color: #000066;">)</span><span style="color: #000066;">,</span> WSADATA<span style="color: #000066;">)</span> <span style="color: #000066;">=</span> <span style="color: #0000ff;">0</span> <span style="color: #000000; font-weight: bold;">then</span>
+  <span style="color: #000000; font-weight: bold;">try</span>
+    S<span style="color: #000066;">:</span><span style="color: #000066;">=</span> Socket<span style="color: #000066;">(</span>AF_INET<span style="color: #000066;">,</span> SOCK_DGRAM<span style="color: #000066;">,</span> IPPROTO_UDP<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">if</span> S &lt;&gt; INVALID_SOCKET <span style="color: #000000; font-weight: bold;">then</span>
+    <span style="color: #000000; font-weight: bold;">begin</span>
+      SockAddr<span style="color: #000066;">.</span><span style="color: #006600;">sin_family</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> AF_INET<span style="color: #000066;">;</span>
+      SockAddr<span style="color: #000066;">.</span><span style="color: #006600;">sin_addr</span><span style="color: #000066;">.</span><span style="color: #006600;">S_addr</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> Inet_Addr<span style="color: #000066;">(</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Servidor<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      SockAddr<span style="color: #000066;">.</span><span style="color: #006600;">sin_port</span><span style="color: #000066;">:</span><span style="color: #000066;">=</span> htons<span style="color: #000066;">(</span><span style="color: #0000ff;">61978</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      Sendto<span style="color: #000066;">(</span>S<span style="color: #000066;">,</span><span style="color: #000066; font-weight: bold;">PAnsiChar</span><span style="color: #000066;">(</span>Mensaje<span style="color: #000066;">)</span><span style="color: #000066;">^</span><span style="color: #000066;">,</span><span style="color: #000066;">Length</span><span style="color: #000066;">(</span>Mensaje<span style="color: #000066;">)</span><span style="color: #000066;">,</span><span style="color: #0000ff;">0</span><span style="color: #000066;">,</span>SockAddr<span style="color: #000066;">,</span><span style="color: #000066;">SizeOf</span><span style="color: #000066;">(</span>SockAddr<span style="color: #000066;">)</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+      Closesocket<span style="color: #000066;">(</span>S<span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+    <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">finally</span>
+    WSACleanup<span style="color: #000066;">(</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+  <span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TfrmMain<span style="color: #000066;">.</span><span style="color: #006600;">btnMasClick</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  EnviarMensaje<span style="color: #000066;">(</span>txtServidor<span style="color: #000066;">.</span><span style="color: #006600;">Text</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'SUBIR'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TfrmMain<span style="color: #000066;">.</span><span style="color: #006600;">btnMenosClick</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  EnviarMensaje<span style="color: #000066;">(</span>txtServidor<span style="color: #000066;">.</span><span style="color: #006600;">Text</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'BAJAR'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span>
+ 
+<span style="color: #000000; font-weight: bold;">procedure</span> TfrmMain<span style="color: #000066;">.</span><span style="color: #006600;">btnMuteClick</span><span style="color: #000066;">(</span>Sender<span style="color: #000066;">:</span> <span style="color: #000066; font-weight: bold;">TObject</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">begin</span>
+  EnviarMensaje<span style="color: #000066;">(</span>txtServidor<span style="color: #000066;">.</span><span style="color: #006600;">Text</span><span style="color: #000066;">,</span><span style="color: #ff0000;">'MUTE'</span><span style="color: #000066;">)</span><span style="color: #000066;">;</span>
+<span style="color: #000000; font-weight: bold;">end</span><span style="color: #000066;">;</span></pre></div>
+<p>Como veis el servidor se puede adaptar para realizar multitud de tareas, desde controlar el volumen hasta apagar el ordenador de forma remota. Por cierto, si no queréis que se muestre la pantalla negra de la consola solo tenéis que comentar o eliminar la linea {$APPTYPE CONSOLE} y el servidor permanecerá oculto mientras se ejecuta. Seguro que así se os ocurren mas posibilidades, como  volver loco a vuestro compañero de trabajo jugando con el volumen de sus altavoces, jejeje</p>
+</div></div></div>    <footer>
+        <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comentarios</h2>
+      
+  <a id="comment-921"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/921#comment-921" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="/comment/921#comment-921" class="permalink" rel="bookmark">Hola Domingo,</a></h3>
+  
+  <div class="submitted">
+    <a href="/comment/921#comment-921" class="permalink" rel="bookmark">Enlace permanente</a>    <span property="dc:date dc:created" content="2012-05-21T06:56:00+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Enviado por <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Delphius (no verificado)</span> el Lun, 05/21/2012 - 06:56</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/node/76" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hola Domingo,<br />
+Como siempre, y como nos tienes acostumbrados, ¡te pasas!<br />
+Tus ejemplos aportan un buen rato más para molestar a amigos del curro, y también para llevarlo a cosas más prácticas... ¡como molestar al jefe! XD jaja. Fuera de bromas, esto se tiene que ir a la biblioteca de código que seguro nos va a servir a más de uno.</p>
+<p>Saludos,</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+
+  </div>
+</article>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+  <footer class="footer container">
+      <div class="region region-footer">
+    <section id="block-menu-menu-enlaces" class="block block-menu clearfix">
+
+        <h2 class="block-title">Enlaces interesantes</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://www.cadetill.com" title="">Cadetill</a></li>
+<li class="leaf"><a href="http://www.delphiaccess.com/forum" title="">DelphiAccess</a></li>
+<li class="leaf"><a href="http://www.delphispano.com/" title="">Delphispano</a></li>
+<li class="leaf"><a href="http://egostar.delphiaccess.com/" title="">Egostar</a></li>
+<li class="leaf"><a href="http://jachguate.wordpress.com/" title="">Jachguate</a></li>
+<li class="leaf"><a href="http://neftali.clubdelphi.com/" title="">Neftali</a></li>
+<li class="leaf"><a href="http://elpoli.delphiaccess.com/" title="">Poliburro</a></li>
+<li class="leaf"><a href="http://theroadtodelphi.wordpress.com/" title="">Rodrigo Ruz</a></li>
+<li class="last leaf"><a href="http://salvador.oversistemas.com/" title="">Salvador Gomez</a></li>
+</ul>
+</section>
+<section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>copyright (c) 2007 - 2016 Domingo Seoane</p>
+
+</section>
+  </div>
+  </footer>
+  <script src="/sites/delphi.jmrds.com/themes/bootstrap/js/bootstrap.js?"></script>
+</body>
+</html>
